@@ -22,6 +22,14 @@ public class Shooting : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Space)){
            
             GameObject bullet = Instantiate(prefab, bulletTransform.position, Quaternion.identity);
+            // GameObject bullet = ObjectPool.SharedInstance.GetPooledObject();
+
+            // if (bullet != null) {
+            // bullet.transform.position = bulletTransform.position;
+            // bullet.transform.rotation = Quaternion.identity;
+            // bullet.SetActive(true);
+            // Debug.Log("instantiated");
+        //}
         }}
 
 }
