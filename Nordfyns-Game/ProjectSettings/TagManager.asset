@@ -6,6 +6,7 @@ TagManager:
   tags:
   - bullet
   - inanimateObject
+  - interactable
   layers:
   - Default
   - TransparentFX
