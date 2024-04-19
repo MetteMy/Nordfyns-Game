@@ -445,6 +445,7 @@ GameObject:
   - component: {fileID: 1117750232}
   - component: {fileID: 1117750233}
   - component: {fileID: 1117750234}
+  - component: {fileID: 1117750235}
   m_Layer: 0
   m_Name: Hero
   m_TagString: Player
@@ -515,7 +516,6 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 1980617497}
   - {fileID: 1220137042}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -588,7 +588,7 @@ BoxCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -630,6 +630,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 93a04ba6b71465849b793e5bb7e4d15a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1117750235
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1117750226}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ca932adfb309f426c94a4d423251e714, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 6
 --- !u!1 &1216057756
 GameObject:
   m_ObjectHideFlags: 0
@@ -1135,7 +1148,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1117750229}
+  m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1980617498
 MonoBehaviour:
@@ -1321,7 +1334,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 4425001722374000243, guid: 4f021acfd10bd5e40a93cbc45ac7cd25, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -33
+      value: -4.02
       objectReference: {fileID: 0}
     - target: {fileID: 4425001722374000243, guid: 4f021acfd10bd5e40a93cbc45ac7cd25, type: 3}
       propertyPath: m_LocalPosition.y
@@ -1365,7 +1378,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6332197986409801604, guid: 4f021acfd10bd5e40a93cbc45ac7cd25, type: 3}
       propertyPath: m_TagString
-      value: Untagged
+      value: bullet
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1396,3 +1409,4 @@ SceneRoots:
   - {fileID: 1770001455}
   - {fileID: 8418443310728910822}
   - {fileID: 1044177997}
+  - {fileID: 1980617497}
