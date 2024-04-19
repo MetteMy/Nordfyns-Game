@@ -30,9 +30,10 @@ public class Interaction : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D other) { 
 
-        if (other.CompareTag("interactable" )){
+        if (other.CompareTag("interactable")){
 
             canInteract = true; 
+            Debug.Log("true");
             
 
         }

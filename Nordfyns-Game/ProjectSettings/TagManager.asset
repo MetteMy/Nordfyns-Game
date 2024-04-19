@@ -7,6 +7,7 @@ TagManager:
   - bullet
   - inanimateObject
   - interactable
+  - sceneTransitionZone
   layers:
   - Default
   - TransparentFX
