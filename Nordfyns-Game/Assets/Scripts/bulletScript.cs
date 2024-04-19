@@ -22,9 +22,7 @@ public class bulletScript : MonoBehaviour
         rb.velocity = new Vector2(direction.x, direction.y).normalized * force; 
         float rot = Mathf.Atan2(rotation.y, rotation.x) * Mathf.Rad2Deg;
         transform.rotation = Quaternion.Euler(0,0,rot*90);
-        // new WaitForSeconds(5);
-        // this.gameObject.SetActive(false);
-        // Invoke("Deactivate", 2f);
+        
     }}
     
     private void OnTriggerEnter2D(Collider2D other){
@@ -33,10 +31,7 @@ public class bulletScript : MonoBehaviour
         Destroy(this.gameObject);
         }
         
-        // Debug.Log("before"+ this.gameObject);
-        // this.gameObject.SetActive(false);
-        //Deactivate();
-        //Debug.Log("collided");
+        
 
     }}
 
