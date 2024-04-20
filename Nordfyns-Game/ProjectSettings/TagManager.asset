@@ -9,6 +9,7 @@ TagManager:
   - interactable
   - sceneTransitionZone
   - enemybullet
+  - enemy
   layers:
   - Default
   - TransparentFX

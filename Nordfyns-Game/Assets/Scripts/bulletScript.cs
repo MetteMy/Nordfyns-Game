@@ -8,6 +8,7 @@ public class bulletScript : MonoBehaviour
     private Vector3 mousePos;
     private Rigidbody2D rb;
     public float force;
+    
     // Start is called before the first frame update
     void Start()
     {
@@ -26,7 +27,7 @@ public class bulletScript : MonoBehaviour
     }}
     
     private void OnTriggerEnter2D(Collider2D other){
-    if (other.CompareTag("inanimateObject")) {
+    if (other.CompareTag("inanimateObject") || other.CompareTag("enemy")) {
         if (gameObject.name == "Bullet(Clone)"){
         Destroy(this.gameObject);
         }
@@ -41,8 +42,5 @@ public class bulletScript : MonoBehaviour
         
     }
 
-    void Deactivate(){
-        gameObject.SetActive(false);
-        Debug.Log("deactivated");
-    }
+    
 }
