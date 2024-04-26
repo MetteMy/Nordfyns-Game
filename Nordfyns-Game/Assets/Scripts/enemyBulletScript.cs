@@ -13,9 +13,9 @@ public class enemyBulletScript : MonoBehaviour
 
     void Start()
     {
-        Debug.Log(playerTransform.position);
+        
         if (gameObject.name == "enemyBullet(Clone)"){
-            Debug.Log("enemy bullet ");
+            
             playerPos = playerTransform.position;
             
         //mainCam = GameObject.FindGameObjectWithTag("MainCamera").GetComponent<Camera>();

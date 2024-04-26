@@ -17,10 +17,11 @@ public class instrumentAttack : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (canInteract == true &&  Input.GetKeyDown(KeyCode.E)){
-            Debug.Log("MUUUSIIIC!!!"); 
-            canInteract = false; 
-            GameObject shockwave = Instantiate(prefab, bulletTransform.position, Quaternion.identity);
+      
+            if (canInteract == true &&  Input.GetKeyDown(KeyCode.E)){
+            // Debug.Log("MUUUSIIIC!!!"); 
+            // canInteract = false; 
+            GameObject shockwave = Instantiate(prefab, this.transform.position, Quaternion.identity);
 
            
         }
@@ -35,11 +36,15 @@ public class instrumentAttack : MonoBehaviour
         if (other.CompareTag("Player")){
 
             canInteract = true; 
-            Debug.Log("true");
+            
             
 
         }
         Debug.Log("ENTERED");
+    }
+
+    void OnTriggerExit2D(Collider2D other){
+        canInteract = false;
     }
 
 

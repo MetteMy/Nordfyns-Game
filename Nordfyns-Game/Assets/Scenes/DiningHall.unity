@@ -236,6 +236,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5005284911398596611, guid: 9ec4567be350d48aab0c6fbbf203522d, type: 3}
+      propertyPath: m_BodyType
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5005284911398596611, guid: 9ec4567be350d48aab0c6fbbf203522d, type: 3}
+      propertyPath: m_LinearDrag
+      value: 0.2
+      objectReference: {fileID: 0}
     - target: {fileID: 8809239797873131041, guid: 9ec4567be350d48aab0c6fbbf203522d, type: 3}
       propertyPath: m_Name
       value: enemyBullet
@@ -899,6 +907,32 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 89.968}
+--- !u!1 &319539167 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 9108102684981688766, guid: 9231b85abbbf42a4d8f57a5f112c1a32, type: 3}
+  m_PrefabInstance: {fileID: 1209382579}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &319539171 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 416949431170431127, guid: 9231b85abbbf42a4d8f57a5f112c1a32, type: 3}
+  m_PrefabInstance: {fileID: 1209382579}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &319539172
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 319539167}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 436c7c840f53eb644b64b94aa70e261f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  prefab: {fileID: 911826827}
+  bulletTransform: {fileID: 319539171}
+  shootingInterval: 3
+  playerTransform: {fileID: 727121091}
 --- !u!1001 &322590940
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1499,6 +1533,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   prefab: {fileID: 911826827}
   bulletTransform: {fileID: 875802196}
+  shootingInterval: 5
   playerTransform: {fileID: 727121091}
 --- !u!1 &637785074
 GameObject:
@@ -2529,7 +2564,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 9108102684981688766, guid: 9231b85abbbf42a4d8f57a5f112c1a32, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 319539172}
   m_SourcePrefab: {fileID: 100100000, guid: 9231b85abbbf42a4d8f57a5f112c1a32, type: 3}
 --- !u!1 &1232529456
 GameObject:

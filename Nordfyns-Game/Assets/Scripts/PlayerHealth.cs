@@ -26,7 +26,7 @@ public class PlayerHealth : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D other)
     {
 
-        Debug.Log("Noget har ramt trigger");
+       
         if (other.CompareTag("enemybullet"))
         {
             health -= 1.0f;

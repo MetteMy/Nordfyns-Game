@@ -25,12 +25,12 @@ public class EnemyHealth : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-
-        Debug.Log("Noget har ramt trigger");
+        Debug.Log("something collided with enemy");
+        
         if (other.CompareTag("bullet"))
         {
             health -= 1.0f;
-            Debug.Log("liv reduceret");
+            Debug.Log("enemy lost a life ");
         }
     }
 

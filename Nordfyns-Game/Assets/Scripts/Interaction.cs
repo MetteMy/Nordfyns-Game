@@ -33,11 +33,11 @@ public class Interaction : MonoBehaviour
         if (other.CompareTag("interactable")){
 
             canInteract = true; 
-            Debug.Log("true");
+           
             
 
         }
-        Debug.Log("ENTERED");
+        
     }
 
 
