@@ -8,6 +8,8 @@ TagManager:
   - inanimateObject
   - interactable
   - sceneTransitionZone
+  - enemybullet
+  - enemy
   layers:
   - Default
   - TransparentFX
