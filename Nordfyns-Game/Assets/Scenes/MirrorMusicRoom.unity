@@ -179,10 +179,18 @@ PrefabInstance:
       propertyPath: m_TagString
       value: inanimateObject
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 2433926764453233039, guid: 40b2269c74f10f1499b74e32831352f2, type: 3}
+      propertyPath: prefab
+      value: 
+      objectReference: {fileID: 952807526}
+    m_RemovedComponents:
+    - {fileID: 2433926764453233039, guid: 40b2269c74f10f1499b74e32831352f2, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 2062350286715454413, guid: 40b2269c74f10f1499b74e32831352f2, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1071967892}
   m_SourcePrefab: {fileID: 100100000, guid: 40b2269c74f10f1499b74e32831352f2, type: 3}
 --- !u!1 &130304655
 GameObject:
@@ -265,7 +273,7 @@ Transform:
   m_GameObject: {fileID: 130304655}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.2, y: 12.47, z: 0}
+  m_LocalPosition: {x: -9.4, y: 2.4, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -534,6 +542,31 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bfe556a127304cb4da5c1cb1279cb6ea, type: 3}
+--- !u!1 &1071967886 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2062350286715454413, guid: 40b2269c74f10f1499b74e32831352f2, type: 3}
+  m_PrefabInstance: {fileID: 108727099}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &1071967891 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 809684542508082885, guid: 40b2269c74f10f1499b74e32831352f2, type: 3}
+  m_PrefabInstance: {fileID: 108727099}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1071967892
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1071967886}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9388fa59f38e1184c90a14377dfd6293, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  prefab: {fileID: 952807526}
+  bulletTransform: {fileID: 1071967891}
+  shootingInterval: 1
 --- !u!1001 &1160538987
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1054,6 +1087,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: instrument (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 2433926764453233039, guid: 40b2269c74f10f1499b74e32831352f2, type: 3}
+      propertyPath: prefab
+      value: 
+      objectReference: {fileID: 952807526}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
