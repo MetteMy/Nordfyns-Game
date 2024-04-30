@@ -10,6 +10,7 @@ public class shockwave : MonoBehaviour
     public float growthRate = 0.1f;
 
     public int segments = 50;
+    public string enemyTag;
 
     private CircleCollider2D circleCollider;
     private LineRenderer lineRenderer;
@@ -42,7 +43,7 @@ public class shockwave : MonoBehaviour
         {
             if (gameObject.name == "shockwave(Clone)")
             {
-                Debug.Log(circleCollider.radius);
+                //Debug.Log(circleCollider.radius);
                 Destroy(this.gameObject);
             }
         }
@@ -63,11 +64,11 @@ public class shockwave : MonoBehaviour
      private void OnTriggerEnter2D(Collider2D other)
      {
 
-        // Debug.Log("other " + other.gameObject.name + "   " + circleCollider.radius);
-        if (other.CompareTag("enemybullet")) {
-            
+        Debug.Log(this.gameObject.name + " colided with " + other.gameObject.name);
+        if (other.CompareTag(enemyTag)) {
+            Debug.Log("shockwaves collided");
         
-        if (gameObject.name == "shockwave(Clone)"){
+        if (gameObject.name == "shockwave(Clone)" || gameObject.name == "enemyShockwave(Clone)"){
         Destroy(this.gameObject);
         }}}
         //  Debug.Log("shockwave collided with" + other.gameObject.name);
