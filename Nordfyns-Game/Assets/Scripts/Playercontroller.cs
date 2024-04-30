@@ -28,6 +28,7 @@ public class PlayerController : MonoBehaviour
     {
         body.velocity = new Vector2(horizontalInput * speed, verticalInput * speed);
 
+        
         // Always update animator with input values
 
         if (horizontalInput != 0 || verticalInput != 0)
@@ -35,13 +36,21 @@ public class PlayerController : MonoBehaviour
         animator.SetFloat("xInput", horizontalInput);
         animator.SetFloat("yInput", verticalInput);
             animator.SetBool("isWalking", true);
-        }else
+            TriggerFootstepSound();
+        }
+        else
         {
             animator.SetBool("isWalking", false);
         }
 
 
         // Debug output to check values
-        Debug.Log("Horizontal Input: " + horizontalInput + ", Vertical Input: " + verticalInput);
+        
+    }
+
+    public void TriggerFootstepSound()
+    {
+        AudioManager.Instance.PlayFootstepSound();
+        
     }
 }
