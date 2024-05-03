@@ -132,6 +132,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e36d4a2de61714ccd93526a64646ad8b, type: 3}
+  m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &691863104
 GameObject:
@@ -997,6 +998,63 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -90.028}
+--- !u!1001 &780079911443946168
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4222172468616931759, guid: c81db97f20a094df1ba86af97044b6af, type: 3}
+      propertyPath: m_Name
+      value: AudioManager
+      objectReference: {fileID: 0}
+    - target: {fileID: 7903394660215141766, guid: c81db97f20a094df1ba86af97044b6af, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -13.011185
+      objectReference: {fileID: 0}
+    - target: {fileID: 7903394660215141766, guid: c81db97f20a094df1ba86af97044b6af, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.6428729
+      objectReference: {fileID: 0}
+    - target: {fileID: 7903394660215141766, guid: c81db97f20a094df1ba86af97044b6af, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.2973626
+      objectReference: {fileID: 0}
+    - target: {fileID: 7903394660215141766, guid: c81db97f20a094df1ba86af97044b6af, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7903394660215141766, guid: c81db97f20a094df1ba86af97044b6af, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7903394660215141766, guid: c81db97f20a094df1ba86af97044b6af, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7903394660215141766, guid: c81db97f20a094df1ba86af97044b6af, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7903394660215141766, guid: c81db97f20a094df1ba86af97044b6af, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7903394660215141766, guid: c81db97f20a094df1ba86af97044b6af, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7903394660215141766, guid: c81db97f20a094df1ba86af97044b6af, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: c81db97f20a094df1ba86af97044b6af, type: 3}
 --- !u!1001 &1163644722785057925
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1204,6 +1262,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 636326091593264197, guid: c82a0f30a3eb84761a45660e7a931c43, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2361188018163960312, guid: c82a0f30a3eb84761a45660e7a931c43, type: 3}
       propertyPath: m_Name
       value: Canvas
@@ -1292,6 +1354,18 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 9115178172457586673, guid: c82a0f30a3eb84761a45660e7a931c43, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: 6c8de12f48792475c837c1a95748e73a, type: 2}
+    - target: {fileID: 9115178172457586673, guid: c82a0f30a3eb84761a45660e7a931c43, type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: -919394438690317474, guid: 6c8de12f48792475c837c1a95748e73a, type: 2}
+    - target: {fileID: 9115178172457586673, guid: c82a0f30a3eb84761a45660e7a931c43, type: 3}
+      propertyPath: m_hasFontAssetChanged
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1374,3 +1448,4 @@ SceneRoots:
   - {fileID: 3505353209703679410}
   - {fileID: 8518403021262690933}
   - {fileID: 691863107}
+  - {fileID: 780079911443946168}
