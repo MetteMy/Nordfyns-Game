@@ -5,10 +5,10 @@ public class AudioManager : MonoBehaviour
     public static AudioManager Instance { get; private set; }
 
     public AudioClip[] footstepSounds;
-    public AudioClip backgroundMusicClip;  // The background music clip
+    public AudioClip backgroundMusicClip;  
 
-    private AudioSource audioSource;       // AudioSource for sound effects
-    private AudioSource musicSource;       // Separate AudioSource for music
+    private AudioSource audioSource;       
+    private AudioSource musicSource;       
 
     public float footstepDelay = 0.5f;
     private float footstepTimer;
@@ -25,7 +25,7 @@ public class AudioManager : MonoBehaviour
             Destroy(gameObject);
         }
 
-        // Ensure two AudioSources are added
+   
         AudioSource[] sources = GetComponents<AudioSource>();
         if (sources.Length < 2)
         {
@@ -38,14 +38,14 @@ public class AudioManager : MonoBehaviour
             musicSource = sources[1];
         }
 
-        // Setup music source
-        musicSource.loop = true;   // Music should loop
+      
+        musicSource.loop = true;   
         musicSource.clip = backgroundMusicClip;
     }
 
     private void Start()
     {
-        PlayBackgroundMusic();  // Start playing background music at game start
+        PlayBackgroundMusic();  
     }
 
     private void Update()
@@ -72,7 +72,7 @@ public class AudioManager : MonoBehaviour
             musicSource.Play();
     }
 
-    // Additional methods for controlling music
+ 
     public void StopBackgroundMusic()
     {
         musicSource.Stop();

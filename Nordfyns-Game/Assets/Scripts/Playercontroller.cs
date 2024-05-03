@@ -9,15 +9,15 @@ public class PlayerController : MonoBehaviour
     public float speed = 3.0f;
     private Animator animator;
     Rigidbody2D body;
+    
 
-    // Start is called before the first frame update
+    
     void Start()
     {
         body = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
     }
 
-    // Update is called once per frame
     void Update()
     {
         horizontalInput = Input.GetAxisRaw("Horizontal");
@@ -28,8 +28,7 @@ public class PlayerController : MonoBehaviour
     {
         body.velocity = new Vector2(horizontalInput * speed, verticalInput * speed);
 
-        
-        // Always update animator with input values
+      
 
         if (horizontalInput != 0 || verticalInput != 0)
         { 
@@ -44,7 +43,7 @@ public class PlayerController : MonoBehaviour
         }
 
 
-        // Debug output to check values
+     
         
     }
 
