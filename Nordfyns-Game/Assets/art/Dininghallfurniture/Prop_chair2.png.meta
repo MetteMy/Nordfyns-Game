@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: b36b84cd7f1ea2d4fa863657a782a0d5
+guid: c5a17bcaf18d85c4ca14bbddfdb1b383
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -110,43 +110,43 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Prop_table1_0
+      name: Prop_chair2_0
       rect:
         serializedVersion: 2
-        x: 2
-        y: 64
-        width: 59
-        height: 220
+        x: 3
+        y: 16
+        width: 26
+        height: 38
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: accefb0c5bba10244b1b2170a8f8015c
-      internalID: 2074362809
+      spriteID: 43d9e1470a4b4a2479688296fc99d833
+      internalID: -885483512
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Prop_table1_1
+      name: Prop_chair2_1
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 64
-        height: 35
+        x: 35
+        y: 12
+        width: 26
+        height: 11
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 67b1e55482fd2f04fb8de3b7c24742e6
-      internalID: -1642163391
+      spriteID: 443b85d9fb81089428479710b086a536
+      internalID: -1011831454
       vertices: []
       indices: 
       edges: []
@@ -162,8 +162,8 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Prop_table1_0: 2074362809
-      Prop_table1_1: -1642163391
+      Prop_chair2_0: -885483512
+      Prop_chair2_1: -1011831454
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
