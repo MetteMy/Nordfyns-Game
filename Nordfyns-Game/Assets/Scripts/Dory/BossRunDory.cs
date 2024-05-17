@@ -46,5 +46,7 @@ public class BossRunDory : StateMachineBehaviour
         {
             animator.SetTrigger("TransitionToNextState"); // Set a trigger to transition to another state
         }
+
+        
     }
 }
