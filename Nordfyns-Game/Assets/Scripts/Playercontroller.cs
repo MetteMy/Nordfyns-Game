@@ -16,6 +16,7 @@ public class PlayerController : MonoBehaviour
     {
         body = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
+        speed = GameManager.Instance.playerSpeed;
     }
 
     void Update()

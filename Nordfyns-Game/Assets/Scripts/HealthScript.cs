@@ -11,7 +11,7 @@ public class HealthScript : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        health = 30.0f;
+        health = GameManager.Instance.playerHealth;
     }
 
     // Update is called once per frame
