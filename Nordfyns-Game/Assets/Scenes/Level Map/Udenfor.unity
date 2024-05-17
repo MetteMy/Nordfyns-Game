@@ -806,38 +806,17 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!1 &2091892680 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1328443132564597501, guid: 7039477709fdb44138c0c6c09b63192f, type: 3}
+--- !u!114 &2091892682 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3027981529165322781, guid: 7039477709fdb44138c0c6c09b63192f, type: 3}
   m_PrefabInstance: {fileID: 2396838889496871978}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &2091892681
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2091892680}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b4f069a2a20ba0248aabf2205e4ac0ce, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  sceneToLoad: Swan
-  doorID: UdenforToSwan
---- !u!114 &2091892682
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2091892680}
+  m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 20811c85050ae40aa859d5ddd4690d15, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  doorID: UdenforToSwan
 --- !u!1001 &2093898894
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -953,13 +932,7 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 2876560199119483969, guid: 7039477709fdb44138c0c6c09b63192f, type: 3}
       insertIndex: -1
       addedObject: {fileID: 2038381940}
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 1328443132564597501, guid: 7039477709fdb44138c0c6c09b63192f, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 2091892681}
-    - targetCorrespondingSourceObject: {fileID: 1328443132564597501, guid: 7039477709fdb44138c0c6c09b63192f, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 2091892682}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7039477709fdb44138c0c6c09b63192f, type: 3}
 --- !u!4 &2396838889496871979 stripped
 Transform:

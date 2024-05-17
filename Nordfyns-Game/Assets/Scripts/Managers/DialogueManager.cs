@@ -7,7 +7,7 @@ public class DialogueManager : MonoBehaviour
     public TMP_Text dialogueText;
     private string[] currentSentences;
     private int index = 0;
-    private bool isDialogueActive = false;
+    public bool isDialogueActive = false;
     private float dialogueCooldown = 0.1f; // Cooldown in seconds
     private float lastDialogueTime; // Time when the last dialogue action occurred
     public GameObject dialoguePanel;

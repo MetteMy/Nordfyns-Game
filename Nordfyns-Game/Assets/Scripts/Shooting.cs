@@ -27,7 +27,7 @@ public class Shooting : MonoBehaviour
 
         transform.rotation = Quaternion.Euler(0, 0, rot);
 
-        if (Input.GetKeyDown(KeyCode.Space))
+        if (Input.GetMouseButtonDown(0))
         {
 
             GameObject bullet = Instantiate(prefab, bulletTransform.position, Quaternion.identity);
