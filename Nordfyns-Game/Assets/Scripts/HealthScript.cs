@@ -11,13 +11,13 @@ public class HealthScript : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        health = 30.0f;
+        // health = 30.0f;
     }
 
     // Update is called once per frame
     void Update()
     {
-      if (health==0)
+      if (health<=0)
         {
             Destroy(gameObject);
         }
@@ -26,11 +26,11 @@ public class HealthScript : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D other)
     {
 
-        Debug.Log("Noget har ramt trigger");
-if (other.CompareTag("bullet"))
+        //Debug.Log("Noget har ramt trigger");
+if (other.CompareTag("enemybullet"))
         {
             health -= 1.0f;
-            Debug.Log("liv reduceret");
+            Debug.Log("pleyer health: " + health);
         }
     }
 
