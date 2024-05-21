@@ -201,9 +201,53 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 1517671498620352141, guid: c81db97f20a094df1ba86af97044b6af, type: 3}
+      propertyPath: footstepDelay
+      value: 0.4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1517671498620352141, guid: c81db97f20a094df1ba86af97044b6af, type: 3}
       propertyPath: backgroundMusicClip
       value: 
       objectReference: {fileID: 8300000, guid: 2f6da7fcfcaea71408e20aed923dbbe0, type: 3}
+    - target: {fileID: 1517671498620352141, guid: c81db97f20a094df1ba86af97044b6af, type: 3}
+      propertyPath: footstepSounds.Array.size
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1517671498620352141, guid: c81db97f20a094df1ba86af97044b6af, type: 3}
+      propertyPath: footstepSounds.Array.data[0]
+      value: 
+      objectReference: {fileID: 8300000, guid: 0918feb66f6a04b1eac66b7b7e6e8451, type: 3}
+    - target: {fileID: 1517671498620352141, guid: c81db97f20a094df1ba86af97044b6af, type: 3}
+      propertyPath: footstepSounds.Array.data[1]
+      value: 
+      objectReference: {fileID: 8300000, guid: de3e269bff34047b09f2c335a907acbb, type: 3}
+    - target: {fileID: 1517671498620352141, guid: c81db97f20a094df1ba86af97044b6af, type: 3}
+      propertyPath: footstepSounds.Array.data[2]
+      value: 
+      objectReference: {fileID: 8300000, guid: 7e3d48a4802f14b0d9e7ef4988d95b0a, type: 3}
+    - target: {fileID: 1517671498620352141, guid: c81db97f20a094df1ba86af97044b6af, type: 3}
+      propertyPath: footstepSounds.Array.data[3]
+      value: 
+      objectReference: {fileID: 8300000, guid: 0918feb66f6a04b1eac66b7b7e6e8451, type: 3}
+    - target: {fileID: 1517671498620352141, guid: c81db97f20a094df1ba86af97044b6af, type: 3}
+      propertyPath: footstepSounds.Array.data[4]
+      value: 
+      objectReference: {fileID: 8300000, guid: 52bc90beb15a34abca79e08848419cc0, type: 3}
+    - target: {fileID: 1517671498620352141, guid: c81db97f20a094df1ba86af97044b6af, type: 3}
+      propertyPath: footstepSounds.Array.data[5]
+      value: 
+      objectReference: {fileID: 8300000, guid: 8b26d8ae5ed04467699c09919e705993, type: 3}
+    - target: {fileID: 1517671498620352141, guid: c81db97f20a094df1ba86af97044b6af, type: 3}
+      propertyPath: footstepSounds.Array.data[6]
+      value: 
+      objectReference: {fileID: 8300000, guid: de3e269bff34047b09f2c335a907acbb, type: 3}
+    - target: {fileID: 1517671498620352141, guid: c81db97f20a094df1ba86af97044b6af, type: 3}
+      propertyPath: footstepSounds.Array.data[7]
+      value: 
+      objectReference: {fileID: 8300000, guid: e7e4a163f4146467eb2d530da93aa122, type: 3}
+    - target: {fileID: 1517671498620352141, guid: c81db97f20a094df1ba86af97044b6af, type: 3}
+      propertyPath: footstepSounds.Array.data[8]
+      value: 
+      objectReference: {fileID: 8300000, guid: fda27c3ec727045d78a9494d3e2b1fbc, type: 3}
     - target: {fileID: 4222172468616931759, guid: c81db97f20a094df1ba86af97044b6af, type: 3}
       propertyPath: m_Name
       value: AudioManager
@@ -24195,14 +24239,30 @@ PrefabInstance:
       propertyPath: prefab
       value: 
       objectReference: {fileID: 291244359}
+    - target: {fileID: 216134956609725542, guid: 396bfff2f926b4b69a043642893cda28, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 216134956609725542, guid: 396bfff2f926b4b69a043642893cda28, type: 3}
+      propertyPath: shootingSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 0bb4b024005a244058fcf71d35504196, type: 3}
     - target: {fileID: 3316211125964844764, guid: 396bfff2f926b4b69a043642893cda28, type: 3}
       propertyPath: prefab
       value: 
       objectReference: {fileID: 291244359}
+    - target: {fileID: 3316211125964844764, guid: 396bfff2f926b4b69a043642893cda28, type: 3}
+      propertyPath: shootingSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 0bb4b024005a244058fcf71d35504196, type: 3}
     - target: {fileID: 6618174012918620672, guid: 396bfff2f926b4b69a043642893cda28, type: 3}
       propertyPath: prefab
       value: 
       objectReference: {fileID: 291244359}
+    - target: {fileID: 6618174012918620672, guid: 396bfff2f926b4b69a043642893cda28, type: 3}
+      propertyPath: shootingSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 0bb4b024005a244058fcf71d35504196, type: 3}
     - target: {fileID: 8026960696737219575, guid: 396bfff2f926b4b69a043642893cda28, type: 3}
       propertyPath: m_Name
       value: Player
