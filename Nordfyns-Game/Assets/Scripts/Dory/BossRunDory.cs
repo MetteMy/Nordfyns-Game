@@ -10,7 +10,7 @@ public class BossRunDory : StateMachineBehaviour
     private BossMultiplyScript multiplyScript;
 
     
-    private bool canTransition; 
+    //private bool canTransition; 
     
     // Hash codes for each state
 
@@ -19,7 +19,7 @@ public class BossRunDory : StateMachineBehaviour
     override public void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
         // Teleport to a random point
-        canTransition = true; 
+        //canTransition = true; 
 
         enemyHealth = animator.GetComponent<EnemyHealth>();
         teleportScript = animator.GetComponent<BossTeleportScript>();
@@ -27,11 +27,11 @@ public class BossRunDory : StateMachineBehaviour
 
         bool hasMultiplied = multiplyScript.hasMultiplied;
         
-        Debug.Log("enemyhealth on enter " + enemyHealth.health);
-        Debug.Log("hasMultiplied " + hasMultiplied);
+        //Debug.Log("enemyhealth on enter " + enemyHealth.health);
+        //Debug.Log("hasMultiplied " + hasMultiplied);
         
         if (enemyHealth.health <= 10 && hasMultiplied == false){
-            Debug.Log("uiwhnifudfid");
+            //Debug.Log("uiwhnifudfid");
             multiplyScript.Multiply();
         }
         else {

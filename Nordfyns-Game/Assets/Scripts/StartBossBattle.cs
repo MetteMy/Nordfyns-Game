@@ -6,6 +6,11 @@ public class StartBossBattle : MonoBehaviour
 {
     // Start is called before the first frame update
 public GameObject player;
+public GameObject playerWeapon;
+
+public GameObject enemy;
+
+
 public Transform playerBattleStartPos;
 
      public void StartBattle()
@@ -14,8 +19,12 @@ public Transform playerBattleStartPos;
         Debug.Log(".... starting battle");
         player = GameObject.FindGameObjectWithTag("Player");
 
-
         player.transform.position = playerBattleStartPos.position;
+
+        playerWeapon.gameObject.SetActive(true);
+
+        enemy.gameObject.SetActive(true);
+
 
      }
 

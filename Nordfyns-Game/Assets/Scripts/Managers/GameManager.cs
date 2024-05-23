@@ -7,9 +7,9 @@ public class GameManager : MonoBehaviour
     public static GameManager Instance { get; private set; }
 
     // Player stats
-    public float playerHealth = 100f;
-    public float playerSpeed = 5f;
-    public float playerDamage = 10f;
+    public float playerHealth;
+    public float playerSpeed;
+    public float playerDamage;
 
     // Boss defeat tracking
     public int bossesDefeated = 0;

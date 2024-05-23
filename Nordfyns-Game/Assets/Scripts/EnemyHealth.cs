@@ -7,18 +7,20 @@ public class EnemyHealth : MonoBehaviour
 {
     //public Slider healthSlider;
     public float health;
-  
+    public float maxHealth;
+    
+    public Image healthBar;
     
     //private float maxHealth = health; 
-    Animator animator;
+   // Animator animator;
 
 
     // Start is called before the first frame update
     void Start()
     {
-        //health = 30.0f;
+        maxHealth = health;
         
-        animator = GetComponent<Animator>();
+        //animator = GetComponent<Animator>();
         
     }
 
@@ -32,8 +34,9 @@ public class EnemyHealth : MonoBehaviour
 
         if (health <= 20)
         {
-            animator.SetBool("IsEnraged", true);
+            //animator.SetBool("IsEnraged", true);
         }
+        healthBar.fillAmount = Mathf.Clamp(health/maxHealth, 0, 1); 
         
         //UpdateHealthUI();
     }
