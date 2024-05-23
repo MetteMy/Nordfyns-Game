@@ -10,6 +10,7 @@ TagManager:
   - sceneTransitionZone
   - enemybullet
   - enemy
+  - NPC
   layers:
   - Default
   - TransparentFX

@@ -11,6 +11,8 @@ GameObject:
   - component: {fileID: 2876560199119483969}
   - component: {fileID: 5014101460250535675}
   - component: {fileID: 3301857544637091126}
+  - component: {fileID: 3568964030241520688}
+  - component: {fileID: 3027981529165322781}
   m_Layer: 0
   m_Name: Door
   m_TagString: Untagged
@@ -105,3 +107,30 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &3568964030241520688
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1328443132564597501}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b4f069a2a20ba0248aabf2205e4ac0ce, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sceneToLoad: Swan
+  doorID: UdenforToSwan
+--- !u!114 &3027981529165322781
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1328443132564597501}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 20811c85050ae40aa859d5ddd4690d15, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  doorID: UdenforToSwan

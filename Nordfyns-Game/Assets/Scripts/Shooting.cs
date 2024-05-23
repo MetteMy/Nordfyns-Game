@@ -22,7 +22,7 @@ public class Shooting : MonoBehaviour
         float rot = Mathf.Atan2(rotation.y, rotation.x) * Mathf.Rad2Deg;
         transform.rotation = Quaternion.Euler(0, 0, rot);
 
-        if (Input.GetKeyDown(KeyCode.Space))
+        if (Input.GetMouseButtonDown(0))
         {
             GameObject bullet = Instantiate(prefab, bulletTransform.position, Quaternion.identity);
             PlayShootingSound(); // Add this line
