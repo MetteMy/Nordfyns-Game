@@ -8,7 +8,7 @@ public class BossMultiplyScript : MonoBehaviour
 
     public bool hasMultiplied =false;
 
-    private GameObject[] enemyclones;
+    private GameObject enemyclone;
 
 
     public void Multiply()
@@ -24,7 +24,8 @@ public class BossMultiplyScript : MonoBehaviour
                 //int index = Random.Range(0, teleportPoints.Length);
                 //transform.position = teleportPoints[i].position;
                 Debug.Log("enemy pos: " + teleportPoints[i].position);
-                Instantiate(enemyPrefab, teleportPoints[i].position, transform.rotation);
+                enemyclone = Instantiate(enemyPrefab, teleportPoints[i].position, transform.rotation);
+                enemyclone.SetActive(true);
                 }
 
             }

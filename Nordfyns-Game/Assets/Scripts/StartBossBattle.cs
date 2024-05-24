@@ -10,6 +10,8 @@ public GameObject playerWeapon;
 
 public GameObject enemy;
 
+public GameObject Bossbattle;
+
 
 public Transform playerBattleStartPos;
 
@@ -25,7 +27,7 @@ public Transform playerBattleStartPos;
 
         enemy.gameObject.SetActive(true);
 
-
+        Bossbattle.gameObject.SetActive(true);
      }
 
     // // Update is called once per frame

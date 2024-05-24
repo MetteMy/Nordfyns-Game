@@ -85,7 +85,10 @@ public class BossRunDory : StateMachineBehaviour
     {
         switch (enemyHealth.health)
         {
-            
+            // case 23:
+                
+            //     animator.SetTrigger("TransitionToState1");
+            //     break;
             case 20:
                 
                 animator.SetTrigger("TransitionToState2");
