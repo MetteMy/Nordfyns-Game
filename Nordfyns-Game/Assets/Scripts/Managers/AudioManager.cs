@@ -87,4 +87,9 @@ public class AudioManager : MonoBehaviour
     {
         musicSource.UnPause();
     }
+
+    public void PlaySound(AudioClip clip)
+    {
+        audioSource.PlayOneShot(clip);
+    }
 }
