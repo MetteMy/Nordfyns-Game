@@ -5,7 +5,7 @@ using UnityEngine;
 public class Interaction : MonoBehaviour
 {
     // Start is called before the first frame update
-
+    public AudioClip interactionSound; // Add this line
 
     bool canInteract = false; 
     void Start()
@@ -18,9 +18,9 @@ public class Interaction : MonoBehaviour
     {
         if (canInteract == true &&  Input.GetKeyDown(KeyCode.E)){
             Debug.Log("has been interacterd with "); 
-            canInteract = false; 
+            canInteract = false;
+            PlayInteractionSound();
 
-           
         }
 
 
@@ -38,6 +38,13 @@ public class Interaction : MonoBehaviour
 
         }
         
+    }
+    void PlayInteractionSound()
+    {
+        if (interactionSound != null)
+        {
+            AudioManager.Instance.PlaySound(interactionSound);
+        }
     }
 
 

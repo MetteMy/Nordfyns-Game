@@ -8,6 +8,7 @@ public class Shooting : MonoBehaviour
     public Transform bulletTransform;
     private Camera mainCam;
     private Vector3 mousePos;
+    public AudioClip shootingSound;
 
     // Start is called before the first frame update
     void Start()
@@ -32,6 +33,15 @@ public class Shooting : MonoBehaviour
 
             GameObject bullet = Instantiate(prefab, bulletTransform.position, Quaternion.identity);
 
+
+        }
+    }
+
+    void PlayShootingSound()
+    {
+        if (shootingSound != null)
+        {
+            AudioManager.Instance.PlaySound(shootingSound);
         }
     }
 
