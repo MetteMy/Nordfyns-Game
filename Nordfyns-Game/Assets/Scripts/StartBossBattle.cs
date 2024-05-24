@@ -19,6 +19,8 @@ public Transform playerBattleStartPos;
      {
 
         Debug.Log(".... starting battle");
+
+        AudioManager.Instance.PlayBossMusic();
         player = GameObject.FindGameObjectWithTag("Player");
 
         player.transform.position = playerBattleStartPos.position;

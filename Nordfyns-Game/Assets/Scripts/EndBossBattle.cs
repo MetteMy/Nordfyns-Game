@@ -58,6 +58,7 @@ void Start()
             // color.a = 0f;
             // uiImage.color = color;
             finishSquare.SetActive(false);
+            AudioManager.Instance.PlayBackgroundMusic();
             
         player.transform.position = playerBattleStartPos.position;
        

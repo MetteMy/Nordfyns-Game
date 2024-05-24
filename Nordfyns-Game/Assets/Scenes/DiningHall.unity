@@ -248,9 +248,45 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 1517671498620352141, guid: c81db97f20a094df1ba86af97044b6af, type: 3}
+      propertyPath: BossMusic
+      value: 
+      objectReference: {fileID: 8300000, guid: 8a9ccd132f1ab33499f5d3920146243f, type: 3}
+    - target: {fileID: 1517671498620352141, guid: c81db97f20a094df1ba86af97044b6af, type: 3}
       propertyPath: backgroundMusicClip
       value: 
       objectReference: {fileID: 8300000, guid: 2f6da7fcfcaea71408e20aed923dbbe0, type: 3}
+    - target: {fileID: 1517671498620352141, guid: c81db97f20a094df1ba86af97044b6af, type: 3}
+      propertyPath: footstepSounds.Array.size
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1517671498620352141, guid: c81db97f20a094df1ba86af97044b6af, type: 3}
+      propertyPath: footstepSounds.Array.data[0]
+      value: 
+      objectReference: {fileID: 8300000, guid: d9c5e91cac7124706b49c8fe8970fcd3, type: 3}
+    - target: {fileID: 1517671498620352141, guid: c81db97f20a094df1ba86af97044b6af, type: 3}
+      propertyPath: footstepSounds.Array.data[1]
+      value: 
+      objectReference: {fileID: 8300000, guid: 5a05da6c8653842c8b095aa46f372976, type: 3}
+    - target: {fileID: 1517671498620352141, guid: c81db97f20a094df1ba86af97044b6af, type: 3}
+      propertyPath: footstepSounds.Array.data[2]
+      value: 
+      objectReference: {fileID: 8300000, guid: 440c08445e77e4bed84f07244d3a9038, type: 3}
+    - target: {fileID: 1517671498620352141, guid: c81db97f20a094df1ba86af97044b6af, type: 3}
+      propertyPath: footstepSounds.Array.data[3]
+      value: 
+      objectReference: {fileID: 8300000, guid: 9e61cff632d8e4298ae021a8c25ac1e4, type: 3}
+    - target: {fileID: 1517671498620352141, guid: c81db97f20a094df1ba86af97044b6af, type: 3}
+      propertyPath: footstepSounds.Array.data[4]
+      value: 
+      objectReference: {fileID: 8300000, guid: dab67e0fe4fe64b2fa7ce927da1bf0a4, type: 3}
+    - target: {fileID: 1517671498620352141, guid: c81db97f20a094df1ba86af97044b6af, type: 3}
+      propertyPath: footstepSounds.Array.data[5]
+      value: 
+      objectReference: {fileID: 8300000, guid: dab67e0fe4fe64b2fa7ce927da1bf0a4, type: 3}
+    - target: {fileID: 1517671498620352141, guid: c81db97f20a094df1ba86af97044b6af, type: 3}
+      propertyPath: footstepSounds.Array.data[6]
+      value: 
+      objectReference: {fileID: 8300000, guid: 9be708fa7af3b48a09b5e50eb374f137, type: 3}
     - target: {fileID: 4222172468616931759, guid: c81db97f20a094df1ba86af97044b6af, type: 3}
       propertyPath: m_Name
       value: AudioManager
@@ -451,7 +487,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1015451292405496290, guid: 396bfff2f926b4b69a043642893cda28, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -132.04
+      value: -132.03996
       objectReference: {fileID: 0}
     - target: {fileID: 3316211125964844764, guid: 396bfff2f926b4b69a043642893cda28, type: 3}
       propertyPath: prefab
@@ -465,6 +501,10 @@ PrefabInstance:
       propertyPath: healthBar
       value: 
       objectReference: {fileID: 2052035570}
+    - target: {fileID: 6857522594936086622, guid: 396bfff2f926b4b69a043642893cda28, type: 3}
+      propertyPath: interactionSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 4d8104a496eca4ca1bc0d2dc55942079, type: 3}
     - target: {fileID: 7768083239127423700, guid: 396bfff2f926b4b69a043642893cda28, type: 3}
       propertyPath: m_IsActive
       value: 0
