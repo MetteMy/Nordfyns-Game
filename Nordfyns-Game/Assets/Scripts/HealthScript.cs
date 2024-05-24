@@ -28,7 +28,7 @@ public class HealthScript : MonoBehaviour
             Destroy(gameObject);
         }
         healthBar.fillAmount = Mathf.Clamp(health/maxHealth, 0, 1);
-        healthBar.color = Color.Lerp(Color.red, Color.green, health / 20); 
+        healthBar.color = Color.Lerp(Color.red, Color.green, health / maxHealth); 
     }
 
     private void OnTriggerEnter2D(Collider2D other)
