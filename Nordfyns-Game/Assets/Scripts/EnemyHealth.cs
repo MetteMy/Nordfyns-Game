@@ -37,7 +37,7 @@ public class EnemyHealth : MonoBehaviour
             //animator.SetBool("IsEnraged", true);
         }
         healthBar.fillAmount = Mathf.Clamp(health/maxHealth, 0, 1); 
-        
+        healthBar.color = Color.Lerp(Color.red, Color.green, health / 20); 
         //UpdateHealthUI();
     }
 
