@@ -8,6 +8,9 @@ public class EndBossBattle : MonoBehaviour
 public GameObject playerWeapon;
 public GameObject finishSquare;   
 
+public GameObject GoodversionOfTeacher; 
+public GameObject MirrorTeacher; 
+
 
 public Image uiImage;
 public float fadeDuration = 5.0f; // Duration in seconds for the fade
@@ -18,7 +21,7 @@ GameObject[] enemies;
 // public GameObject enemy;
 
 
-public Transform playerBattleStartPos;
+public Transform playerBattleEndPos;
 void Start()
     {
         uiImage = uiImage.GetComponent<Image>();
@@ -43,12 +46,17 @@ void Start()
      public void EndBattle()
      {
 
-        Debug.Log(".... Ending battle");
+        // Debug.Log(".... Ending battle");
         player = GameObject.FindGameObjectWithTag("Player");
 
 
         playerWeapon.gameObject.SetActive(false);
         GameManager.Instance.BossDefeated();
+        GoodversionOfTeacher.SetActive(true);
+        if (MirrorTeacher != null){
+        MirrorTeacher.SetActive(false);
+        }
+    
 
         
         finishSquare.SetActive(true);
@@ -60,10 +68,10 @@ void Start()
             finishSquare.SetActive(false);
             AudioManager.Instance.PlayBackgroundMusic();
             
-        player.transform.position = playerBattleStartPos.position;
+            player.transform.position = playerBattleEndPos.position;
        
 
-        this.gameObject.SetActive(false);
+            this.gameObject.SetActive(false);
         }
      }
 

@@ -656,9 +656,11 @@ MonoBehaviour:
   player: {fileID: 1159945589}
   playerWeapon: {fileID: 485898946}
   finishSquare: {fileID: 683788318}
+  GoodversionOfTeacher: {fileID: 612898729}
+  MirrorTeacher: {fileID: 111123245}
   uiImage: {fileID: 683788320}
   fadeDuration: 5
-  playerBattleStartPos: {fileID: 1839674012}
+  playerBattleEndPos: {fileID: 1839674012}
 --- !u!4 &588323873
 Transform:
   m_ObjectHideFlags: 0
