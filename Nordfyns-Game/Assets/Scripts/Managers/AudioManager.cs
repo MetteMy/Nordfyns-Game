@@ -7,6 +7,8 @@ public class AudioManager : MonoBehaviour
     public AudioClip[] footstepSounds;
     public AudioClip backgroundMusicClip;  
 
+    public AudioClip BossMusic;
+
     private AudioSource audioSource;       
     private AudioSource musicSource;       
 
@@ -68,8 +70,9 @@ public class AudioManager : MonoBehaviour
 
     public void PlayBackgroundMusic()
     {
-        if (musicSource.clip != null)
-            musicSource.Play();
+        musicSource.clip = backgroundMusicClip;
+        if (musicSource.clip != null){
+            musicSource.Play();}
     }
 
  
@@ -92,4 +95,10 @@ public class AudioManager : MonoBehaviour
     {
         audioSource.PlayOneShot(clip);
     }
+
+    public void PlayBossMusic(){
+        musicSource.clip = BossMusic;
+        if (musicSource.clip != null){
+            musicSource.Play();
+    }}
 }

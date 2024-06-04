@@ -10,6 +10,8 @@ public class EnemyHealth : MonoBehaviour
     public float maxHealth;
     
     public Image healthBar;
+
+    // public GameObject BossBattle;
     
     //private float maxHealth = health; 
    // Animator animator;
@@ -27,8 +29,11 @@ public class EnemyHealth : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+
+        // BossBattle = GetComponent<EndBossBattle>();
         if (health == 0)
         {
+            // BossBattle.enemyAmount -= 1;
             Destroy(gameObject);
         }
 
@@ -48,7 +53,7 @@ public class EnemyHealth : MonoBehaviour
         if (other.CompareTag("bullet"))
         {
             health -= 1.0f;
-            Debug.Log("enemy health: " + health);
+            // Debug.Log("enemy health: " + health);
         }
     }
 
