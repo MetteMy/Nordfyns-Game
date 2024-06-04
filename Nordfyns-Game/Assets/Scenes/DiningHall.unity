@@ -451,7 +451,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1015451292405496290, guid: 396bfff2f926b4b69a043642893cda28, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -132.04
+      value: -132.03998
       objectReference: {fileID: 0}
     - target: {fileID: 3316211125964844764, guid: 396bfff2f926b4b69a043642893cda28, type: 3}
       propertyPath: prefab
@@ -465,6 +465,10 @@ PrefabInstance:
       propertyPath: healthBar
       value: 
       objectReference: {fileID: 2052035570}
+    - target: {fileID: 6489249590177061485, guid: 396bfff2f926b4b69a043642893cda28, type: 3}
+      propertyPath: spawnLocation
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 7768083239127423700, guid: 396bfff2f926b4b69a043642893cda28, type: 3}
       propertyPath: m_IsActive
       value: 0
@@ -33433,9 +33437,21 @@ MonoBehaviour:
   dialogueManager: {fileID: 1922162401}
   canTalk: 0
   sentences:
-  - dwfersefdsf
-  - fewfwef
-  - efwefwe
+  - The school used to be lively, fun, and welcoming.
+  - But now, something is wrong, and the atmosphere feels different.
+  - The steudents are staying in their rooms and i havent seen a single teacher today.
+  - I miss the usual ways of the school.
+  - What is going on? I maktes me really sad...
+  - This school is something special to me.
+  - It is such a wonderful place, and I DON't want it to be like this.
+  - To be honest... i also feel gloomy.
+  - but I can't shake this weird depressing feeling.
+  - '*takes something out of her pocket*'
+  - I want the school to be a happy place again. Do you want to help me?
+  - Thank you.
+  - You see, this trinket is something special, and I will show you why.
+  - Please hold out your hand, and touch the trinket.
+  - Let's go! Prepare yourself!
   TriggersBossBattle: 1
 --- !u!212 &612898731
 SpriteRenderer:

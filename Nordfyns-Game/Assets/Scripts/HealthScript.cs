@@ -9,6 +9,7 @@ public class HealthScript : MonoBehaviour
     public float health;
     public float maxHealth;
     public Image healthBar;
+    public Transform spawnLocation;
 
 
     // Start is called before the first frame update
@@ -25,7 +26,7 @@ public class HealthScript : MonoBehaviour
     
       if (health<=0)
         {
-            Destroy(gameObject);
+            Respawn();
         }
         healthBar.fillAmount = Mathf.Clamp(health/maxHealth, 0, 1);
         healthBar.color = Color.Lerp(Color.red, Color.green, health / maxHealth); 
@@ -40,6 +41,13 @@ if (other.CompareTag("enemybullet"))
             health -= 1.0f;
             Debug.Log("player health: " + health);
         }
+    }
+
+    private void Respawn()
+
+    {
+        health = maxHealth;
+        transform.position = spawnLocation.position;
     }
 
 }

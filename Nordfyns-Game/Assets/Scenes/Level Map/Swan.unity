@@ -9320,7 +9320,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 20811c85050ae40aa859d5ddd4690d15, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  doorID: SwanToUdenfor
+  doorID: Door2
 --- !u!114 &1709459226
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9335,6 +9335,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sceneToLoad: Udenfor
   doorID: SwanToUdenfor
+  doorSound: {fileID: 0}
 --- !u!4 &1709459227 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2876560199119483969, guid: 7039477709fdb44138c0c6c09b63192f, type: 3}

@@ -8,6 +8,7 @@ public class SceneTransition : MonoBehaviour
     public string sceneToLoad;
     public string doorID;
     private bool canTransition;
+    public AudioClip doorSound;
 
     private void Start()
     {
@@ -16,12 +17,13 @@ public class SceneTransition : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.E) && canTransition ==true)
+        if (Input.GetKeyDown(KeyCode.E) && canTransition == true)
         {
             GameManager.Instance.lastDoorID = doorID;
             Debug.Log("Setting lastDoorID to: " + doorID);
             SceneManager.LoadScene(sceneToLoad);
             canTransition = false;
+            PlayDoorSound();
         }
         
     }
@@ -33,6 +35,24 @@ public class SceneTransition : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             canTransition = true;
+        }
+    }
+
+    private void OnTriggerExit2D(Collider2D other)
+    {
+        
+
+        if (other.CompareTag("Player"))
+        {
+            canTransition = false;
+        }
+    }
+
+    void PlayDoorSound()
+    {
+        if (doorSound != null)
+        {
+            AudioManager.Instance.PlaySound(doorSound);
         }
     }
 }

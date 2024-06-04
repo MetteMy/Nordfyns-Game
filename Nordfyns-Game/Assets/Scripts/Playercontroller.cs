@@ -9,20 +9,30 @@ public class PlayerController : MonoBehaviour
     public float speed = 3.0f;
     private Animator animator;
     Rigidbody2D body;
-    
+    private DialogueManager dialogueManager;
 
-    
+
+
     void Start()
     {
         body = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
         speed = GameManager.Instance.playerSpeed;
+        dialogueManager = FindObjectOfType<DialogueManager>();
     }
 
     void Update()
     {
-        horizontalInput = Input.GetAxisRaw("Horizontal");
-        verticalInput = Input.GetAxisRaw("Vertical");
+        if (dialogueManager != null && dialogueManager.IsDialogueActive())
+        {
+            horizontalInput = 0;
+            verticalInput = 0;
+        }
+        else
+        {
+            horizontalInput = Input.GetAxisRaw("Horizontal");
+            verticalInput = Input.GetAxisRaw("Vertical");
+        }
     }
 
     void FixedUpdate()
