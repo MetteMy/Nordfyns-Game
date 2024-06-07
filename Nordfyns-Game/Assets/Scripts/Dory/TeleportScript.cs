@@ -10,7 +10,7 @@ public class BossTeleportScript : MonoBehaviour
         {
             int index = Random.Range(0, teleportPoints.Length);
             transform.position = teleportPoints[index].position;
-            Debug.Log("Succesful teleport!");
+            Debug.Log("Succesful teleport!  " + transform.position);
         }
     }
 

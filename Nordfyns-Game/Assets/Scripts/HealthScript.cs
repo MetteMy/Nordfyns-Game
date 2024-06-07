@@ -26,7 +26,7 @@ public class HealthScript : MonoBehaviour
     
       if (health<=0)
         {
-            Respawn();
+           Respawn();
         }
         healthBar.fillAmount = Mathf.Clamp(health/maxHealth, 0, 1);
         healthBar.color = Color.Lerp(Color.red, Color.green, health / maxHealth); 
@@ -46,8 +46,8 @@ if (other.CompareTag("enemybullet"))
     private void Respawn()
 
     {
-        health = maxHealth;
-        transform.position = spawnLocation.position;
+        //health = maxHealth;
+        //transform.position = spawnLocation.position;
     }
 
 }

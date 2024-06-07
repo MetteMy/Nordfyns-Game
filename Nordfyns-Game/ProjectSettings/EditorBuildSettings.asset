@@ -9,7 +9,7 @@ EditorBuildSettings:
     path: Assets/Scenes/Scene2.unity
     guid: 8c9cfa26abfee488c85f1582747f6a02
   - enabled: 1
-    path: Assets/Scenes/Level Map/Udenfor.unity
+    path: Assets/Scenes/Level Map/Outdoor.unity
     guid: bc06494ef1ef14aff881ec0a6ccf32b6
   - enabled: 1
     path: Assets/Scenes/Level Map/Krea.unity
@@ -17,4 +17,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Level Map/Swan.unity
     guid: 8b0640cc6761844c4a6ee1388e3d7566
+  - enabled: 1
+    path: Assets/Scenes/Level Map/DiningHall.unity
+    guid: 9acf41d8db401c940a362b5db753f1b5
   m_configObjects: {}

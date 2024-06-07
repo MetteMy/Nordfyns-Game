@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 48e01f26be77ae04e99743f9502cdb2e
+guid: 04d1402bca8ebe248b9513642dd6e05f
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -110,38 +110,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: swan_tableH_0
+      name: swan_blackboard_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 78
-        width: 64
-        height: 66
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline:
-      - - {x: 0, y: -33}
-        - {x: 0, y: 33}
-        - {x: 61, y: 33}
-        - {x: 61, y: -33}
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 67b177160af692d47a4da79e4fc1196d
-      internalID: 1828576665
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: swan_tableH_1
-      rect:
-        serializedVersion: 2
-        x: 64
-        y: 78
-        width: 64
-        height: 66
+        x: 8
+        y: 66
+        width: 128
+        height: 50
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -149,20 +124,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f8f5c098693bb004b90bd8a258aaa18c
-      internalID: -1025937849
+      spriteID: eaa36fadaa959e14088b152c3727e4b1
+      internalID: 368158767
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: swan_tableH_2
+      name: swan_blackboard_1
       rect:
         serializedVersion: 2
-        x: 0
-        y: 12
-        width: 64
-        height: 66
+        x: 9
+        y: 66
+        width: 128
+        height: 78
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -170,20 +145,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3a476f44d4b504041b2e612b16500fe4
-      internalID: 939025910
+      spriteID: 34e90dc149ac9ee48880ab2afbe169b3
+      internalID: 1175725164
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: swan_tableH_3
+      name: swan_blackboard_2
       rect:
         serializedVersion: 2
-        x: 64
-        y: 12
-        width: 64
-        height: 66
+        x: 6
+        y: 16
+        width: 132
+        height: 18
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -191,8 +166,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2f5430a82b64e8140840a5748866b5b2
-      internalID: -31442512
+      spriteID: c0c53d0f8143242409c374c0ba28baa3
+      internalID: -1042414721
       vertices: []
       indices: 
       edges: []
@@ -208,10 +183,9 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      swan_tableH_0: 1828576665
-      swan_tableH_1: -1025937849
-      swan_tableH_2: 939025910
-      swan_tableH_3: -31442512
+      swan_blackboard_0: 368158767
+      swan_blackboard_1: 1175725164
+      swan_blackboard_2: -1042414721
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
