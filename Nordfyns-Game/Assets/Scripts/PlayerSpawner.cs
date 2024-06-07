@@ -25,9 +25,9 @@ public class PlayerSpawner : MonoBehaviour
                 Debug.Log("Current player position: " + player.transform.position);
 
                 // Set player's position to the door's position
-                player.transform.position = door.transform.position;
+                //player.transform.position = door.transform.position;
 
-                Debug.Log("New player position: " + player.transform.position);
+                //Debug.Log("New player position: " + player.transform.position);
                 break;
             }
         }

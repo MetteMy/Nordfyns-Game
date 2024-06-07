@@ -4,23 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 public class ImageAlphaChange : MonoBehaviour
 {
-    // Start is called before the first frame update
-    // private Image uiImage;
-    
-    // void Start()
-    // {
-    //     uiImage = GetComponent<Image>();
-    //     Debug.Log("Imageeeee" + uiImage.color);
-    //     Color color = uiImage.color;
-    //     color.a = 0; 
-    //     for (float i = 0; i < 100; i++)
-    //     {
-    //         color.a = i/100;
-    //         Debug.Log(color.a  + "   " + i);
-    //         uiImage.color = color;
-            
-    //     }
-    // }
+ 
 
     private Image uiImage;
     public float fadeDuration = 5.0f; // Duration in seconds for the fade
@@ -51,6 +35,17 @@ public class ImageAlphaChange : MonoBehaviour
         // Ensure the final alpha is set to 1
         color.a = 1f;
         uiImage.color = color;
+    }
+
+
+    public void makeRed(){
+        
+        uiImage = GetComponent<Image>();
+        Color color = uiImage.color;
+        color = new Color32(255,0,0,0);
+        Debug.Log(color);
+        uiImage.color = color;
+        StartCoroutine(FadeIn());
     }
 
     // Update is called once per frame
