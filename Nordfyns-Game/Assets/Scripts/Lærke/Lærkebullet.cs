@@ -7,6 +7,7 @@ public class Lærkebullet : MonoBehaviour
     public float bulletLife = 1f;  // Defines how long before the bullet is destroyed
     public float rotation = 0f;
     public float speed = 1f;
+    public float damage = 1f;
 
 
     private Vector2 spawnPoint;

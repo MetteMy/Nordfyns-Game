@@ -8,6 +8,10 @@ public class instrumentAttack : MonoBehaviour
     public GameObject prefab; 
     public Transform bulletTransform;
 
+    private EnemyHealth enemyHealth;
+
+    public int damage; 
+
 
     void Start()
     {
@@ -19,10 +23,11 @@ public class instrumentAttack : MonoBehaviour
     {
       
             if (canInteract == true &&  Input.GetKeyDown(KeyCode.E)){
-            // Debug.Log("MUUUSIIIC!!!"); 
+            Debug.Log("MUUUSIIIC!!!"); 
             // canInteract = false; 
-            GameObject shockwave = Instantiate(prefab, this.transform.position, Quaternion.identity);
-
+            //GameObject shockwave = Instantiate(prefab, this.transform.position, Quaternion.identity);
+            enemyHealth = GetComponentInParent<EnemyHealth>();
+            enemyHealth.health -= damage;
            
         }
 
@@ -36,13 +41,23 @@ public class instrumentAttack : MonoBehaviour
         if (other.CompareTag("Player")){
 
             canInteract = true; 
-            
+            Debug.Log("can interact true");
             
 
         }
         Debug.Log("ENTERED");
     }
+  void OnTriggerStay2D(Collider2D other) { 
 
+        if (other.CompareTag("Player")){
+
+            canInteract = true; 
+            Debug.Log("can interact true");
+            
+
+        }
+        Debug.Log("ENTERED");
+    }
     void OnTriggerExit2D(Collider2D other){
         canInteract = false;
     }

@@ -2,13 +2,15 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class MadsBossfight : StateMachineBehaviour
+public class AsmusBoss : StateMachineBehaviour
 {
    public int[] activeSpawnersIndexes;  // Array to specify which spawners should be active
 
     private SpawnerManager spawnerManager;
 
     private EnemyHealth enemyHealth;
+
+    private AsmusMovement asmusMovement;
 
     private BossTeleportScript teleportScript;
 
@@ -18,8 +20,9 @@ public class MadsBossfight : StateMachineBehaviour
 
         enemyHealth = animator.GetComponent<EnemyHealth>();
         teleportScript = animator.GetComponentInChildren<BossTeleportScript>();
-
-        teleportScript.Teleport();
+        asmusMovement = animator.GetComponent<AsmusMovement>();
+        asmusMovement.Move();
+       //teleportScript.Teleport();
 
         if (spawnerManager == null)
         {
@@ -71,23 +74,4 @@ public class MadsBossfight : StateMachineBehaviour
         }
 
     }
-    // OnStateExit is called when a transition ends and the state machine finishes evaluating this state
-    override public void OnStateExit(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
-    {
-        // Implement any exit logic here if needed
-    }
-
-    // OnStateMove is called right after Animator.OnAnimatorMove()
-    //override public void OnStateMove(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
-    //{
-    //    // Implement code that processes and affects root motion
-    //}
-
-    // OnStateIK is called right after Animator.OnAnimatorIK()
-    //override public void OnStateIK(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
-    //{
-    //    // Implement code that sets up animation IK (inverse kinematics)
-    //}
 }
-
-
