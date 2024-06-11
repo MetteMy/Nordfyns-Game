@@ -164,7 +164,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 783094c63acb04f0cafdaf40c1b9130f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  activeSpawnersIndexes: 01000000
+  activeSpawnersIndexes: 050000000b000000
 --- !u!1101 &-5836573387316255674
 AnimatorStateTransition:
   m_ObjectHideFlags: 1
@@ -233,7 +233,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 783094c63acb04f0cafdaf40c1b9130f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  activeSpawnersIndexes: 02000000
+  activeSpawnersIndexes: 0000000001000000030000000c000000040000000700000008000000090000000a0000000b0000000d000000
 --- !u!1101 &-5235611783126521398
 AnimatorStateTransition:
   m_ObjectHideFlags: 1
@@ -322,7 +322,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 783094c63acb04f0cafdaf40c1b9130f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  activeSpawnersIndexes: 02000000
+  activeSpawnersIndexes: 03000000040000000c000000090000000a0000000b000000
 --- !u!1101 &-1367946027646066541
 AnimatorStateTransition:
   m_ObjectHideFlags: 1
@@ -396,7 +396,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 783094c63acb04f0cafdaf40c1b9130f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  activeSpawnersIndexes: 03000000
+  activeSpawnersIndexes: 050000000600000002000000030000000400000007000000080000000b0000000c0000000d000000
 --- !u!1101 &-478316958461927116
 AnimatorStateTransition:
   m_ObjectHideFlags: 1
@@ -665,7 +665,7 @@ AnimatorStateMachine:
     m_Position: {x: 0, y: 0, z: 0}
   - serializedVersion: 1
     m_State: {fileID: -6145598691979209270}
-    m_Position: {x: 340, y: -360, z: 0}
+    m_Position: {x: 340, y: -370, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 4151461731857101578}
     m_Position: {x: 320, y: -500, z: 0}
@@ -700,7 +700,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 783094c63acb04f0cafdaf40c1b9130f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  activeSpawnersIndexes: 01000000
+  activeSpawnersIndexes: 00000000010000000c0000000200000007000000080000000b000000
 --- !u!114 &2591380003756979134
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -985,4 +985,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 783094c63acb04f0cafdaf40c1b9130f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  activeSpawnersIndexes: 00000000
+  activeSpawnersIndexes: 020000000b000000

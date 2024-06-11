@@ -6,17 +6,14 @@ public class BulletSpawner : MonoBehaviour
 {
     enum SpawnerType { Straight, Spin, Wave }
 
-
     [Header("Bullet Attributes")]
     public GameObject bullet;
     public float bulletLife = 1f;
     public float speed = 1f;
 
-
     [Header("Spawner Attributes")]
     [SerializeField] private SpawnerType spawnerType;
     [SerializeField] private float firingRate = 1f;
-
     [Header("Wave Attributes")]
     [SerializeField] private int bulletsInWave = 5;
     [SerializeField] private float angleSpread = 45f;
@@ -30,14 +27,11 @@ public class BulletSpawner : MonoBehaviour
 
     public GameObject SpawnedBullet { get => spawnedBullet; set => spawnedBullet = value; }
 
-    // Start is called before the first frame update
+
     void Start()
     {
-
     }
 
-
-    // Update is called once per frame
     void Update()
     {
         timer += Time.deltaTime;
@@ -48,7 +42,6 @@ public class BulletSpawner : MonoBehaviour
             timer = 0;
         }
     }
-
 
     private void Fire()
     {
@@ -100,6 +93,37 @@ public class BulletSpawner : MonoBehaviour
             GameObject spawnedBullet = Instantiate(bullet, transform.position, bulletRotation);
             spawnedBullet.GetComponent<Lærkebullet>().speed = speed;
             spawnedBullet.GetComponent<Lærkebullet>().bulletLife = bulletLife;
+            spawnedBullet = Instantiate(bullet, transform.position, transform.rotation);
+            if (spawnedBullet != null)
+            {
+                var lærkebullet = spawnedBullet.GetComponent<Lærkebullet>();
+                if (lærkebullet != null)
+                {
+                    lærkebullet.speed = speed;
+                    lærkebullet.bulletLife = bulletLife;
+                }
+                else
+                {
+                    var bombSpawnerBullet = spawnedBullet.GetComponent<BombSpawnerBullet>();
+                    if (bombSpawnerBullet != null)
+                    {
+                        bombSpawnerBullet.speed = speed;
+                        bombSpawnerBullet.bulletLife = bulletLife;
+                    }
+                    else
+                    {
+                        Debug.LogWarning("Spawned bullet does not have Lærkebullet or BombSpawnerBullet component.");
+                    }
+                }
+            }
+            else
+            {
+                Debug.LogError("Failed to instantiate bullet.");
+            }
+        }
+        else
+        {
+            Debug.LogError("Bullet prefab is not assigned.");
         }
     }
 }

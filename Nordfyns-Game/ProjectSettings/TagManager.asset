@@ -11,6 +11,7 @@ TagManager:
   - enemybullet
   - enemy
   - NPC
+  - Shield
   layers:
   - Default
   - TransparentFX
