@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class BulletSpawner : MonoBehaviour
 {
-    enum SpawnerType { Straight, Spin }
+    enum SpawnerType { Straight, Spin, Wave }
 
     [Header("Bullet Attributes")]
     public GameObject bullet;
@@ -14,9 +14,19 @@ public class BulletSpawner : MonoBehaviour
     [Header("Spawner Attributes")]
     [SerializeField] private SpawnerType spawnerType;
     [SerializeField] private float firingRate = 1f;
+    [Header("Wave Attributes")]
+    [SerializeField] private int bulletsInWave = 5;
+    [SerializeField] private float angleSpread = 45f;
+
+    [Header("Direction Attributes")]
+    public Vector2 fireDirection = Vector2.right; 
+
 
     private GameObject spawnedBullet;
     private float timer = 0f;
+
+    public GameObject SpawnedBullet { get => spawnedBullet; set => spawnedBullet = value; }
+
 
     void Start()
     {
@@ -35,9 +45,40 @@ public class BulletSpawner : MonoBehaviour
 
     private void Fire()
     {
+        
         if (bullet)
         {
-            spawnedBullet = Instantiate(bullet, transform.position, transform.rotation);
+            if (spawnerType == SpawnerType.Wave)
+            {
+                FireWave();
+            }
+            else
+            {
+                FireSingle();
+            }
+        }
+
+        
+        // if (bullet)
+        // {
+        //     spawnedBullet = Instantiate(bullet, transform.position, Quaternion.identity);
+        //     spawnedBullet.GetComponent<Lærkebullet>().speed = speed;
+        //     spawnedBullet.GetComponent<Lærkebullet>().bulletLife = bulletLife;
+
+        //     spawnedBullet.transform.rotation = transform.rotation;
+        // }
+    }
+
+
+    private void FireSingle()
+    {
+        Quaternion bulletRotation = Quaternion.LookRotation(Vector3.forward, fireDirection);
+        // GameObject spawnedBullet = Instantiate(bullet, transform.position, Quaternion.identity);
+        // spawnedBullet.GetComponent<Lærkebullet>().speed = speed;
+        // spawnedBullet.GetComponent<Lærkebullet>().bulletLife = bulletLife;
+        //spawnedBullet.transform.rotation = transform.rotation;
+
+        spawnedBullet = Instantiate(bullet, transform.position, transform.rotation);
             if (spawnedBullet != null)
             {
                 var lærkebullet = spawnedBullet.GetComponent<Lærkebullet>();
@@ -69,5 +110,22 @@ public class BulletSpawner : MonoBehaviour
         {
             Debug.LogError("Bullet prefab is not assigned.");
         }
+    }
+
+    private void FireWave()
+    {
+        float angleStep = angleSpread / (bulletsInWave - 1);
+        float startingAngle = transform.eulerAngles.z - angleSpread / 2;
+
+        for (int i = 0; i < bulletsInWave; i++)
+        {
+            float angle = startingAngle + (angleStep * i);
+            Vector2 direction = Quaternion.Euler(0, 0, angle) * fireDirection;
+             Quaternion bulletRotation = Quaternion.LookRotation(Vector3.forward, direction);
+            //Quaternion bulletRotation = Quaternion.Euler(new Vector3(0, 0, angle));
+            GameObject spawnedBullet = Instantiate(bullet, transform.position, bulletRotation);
+            spawnedBullet.GetComponent<Lærkebullet>().speed = speed;
+            spawnedBullet.GetComponent<Lærkebullet>().bulletLife = bulletLife;
+            
     }
 }

@@ -29,8 +29,15 @@ public class PlayerHealth : MonoBehaviour
        
         if (other.CompareTag("enemybullet"))
         {
+            // if (other.gameObject.damage != null){
+            //     health -= other.gameObject.damage;
+            //     Debug.Log("speciel bullet");
+            // }
+            // else{
             health -= 1.0f;
             Debug.Log("liv reduceret");
+
+            // }
         }
     }
 

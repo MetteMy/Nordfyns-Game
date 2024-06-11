@@ -31,7 +31,7 @@ public class EnemyHealth : MonoBehaviour
     {
 
         // BossBattle = GetComponent<EndBossBattle>();
-        if (health == 0)
+        if (health <= 0)
         {
             // BossBattle.enemyAmount -= 1;
             Destroy(gameObject);
