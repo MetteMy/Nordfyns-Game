@@ -73,27 +73,12 @@ public class BulletSpawner : MonoBehaviour
     private void FireSingle()
     {
         Quaternion bulletRotation = Quaternion.LookRotation(Vector3.forward, fireDirection);
-        GameObject spawnedBullet = Instantiate(bullet, transform.position, Quaternion.identity);
-        spawnedBullet.GetComponent<Lærkebullet>().speed = speed;
-        spawnedBullet.GetComponent<Lærkebullet>().bulletLife = bulletLife;
+        // GameObject spawnedBullet = Instantiate(bullet, transform.position, Quaternion.identity);
+        // spawnedBullet.GetComponent<Lærkebullet>().speed = speed;
+        // spawnedBullet.GetComponent<Lærkebullet>().bulletLife = bulletLife;
         //spawnedBullet.transform.rotation = transform.rotation;
-    }
 
-    private void FireWave()
-    {
-        float angleStep = angleSpread / (bulletsInWave - 1);
-        float startingAngle = transform.eulerAngles.z - angleSpread / 2;
-
-        for (int i = 0; i < bulletsInWave; i++)
-        {
-            float angle = startingAngle + (angleStep * i);
-            Vector2 direction = Quaternion.Euler(0, 0, angle) * fireDirection;
-             Quaternion bulletRotation = Quaternion.LookRotation(Vector3.forward, direction);
-            //Quaternion bulletRotation = Quaternion.Euler(new Vector3(0, 0, angle));
-            GameObject spawnedBullet = Instantiate(bullet, transform.position, bulletRotation);
-            spawnedBullet.GetComponent<Lærkebullet>().speed = speed;
-            spawnedBullet.GetComponent<Lærkebullet>().bulletLife = bulletLife;
-            spawnedBullet = Instantiate(bullet, transform.position, transform.rotation);
+        spawnedBullet = Instantiate(bullet, transform.position, transform.rotation);
             if (spawnedBullet != null)
             {
                 var lærkebullet = spawnedBullet.GetComponent<Lærkebullet>();
@@ -125,5 +110,22 @@ public class BulletSpawner : MonoBehaviour
         {
             Debug.LogError("Bullet prefab is not assigned.");
         }
+    }
+
+    private void FireWave()
+    {
+        float angleStep = angleSpread / (bulletsInWave - 1);
+        float startingAngle = transform.eulerAngles.z - angleSpread / 2;
+
+        for (int i = 0; i < bulletsInWave; i++)
+        {
+            float angle = startingAngle + (angleStep * i);
+            Vector2 direction = Quaternion.Euler(0, 0, angle) * fireDirection;
+             Quaternion bulletRotation = Quaternion.LookRotation(Vector3.forward, direction);
+            //Quaternion bulletRotation = Quaternion.Euler(new Vector3(0, 0, angle));
+            GameObject spawnedBullet = Instantiate(bullet, transform.position, bulletRotation);
+            spawnedBullet.GetComponent<Lærkebullet>().speed = speed;
+            spawnedBullet.GetComponent<Lærkebullet>().bulletLife = bulletLife;
+            
     }
 }
