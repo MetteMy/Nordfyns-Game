@@ -7320,6 +7320,7 @@ GameObject:
   - component: {fileID: 1187559242}
   - component: {fileID: 1187559244}
   - component: {fileID: 1187559243}
+  - component: {fileID: 1187559245}
   m_Layer: 0
   m_Name: Triangle
   m_TagString: Untagged
@@ -7354,7 +7355,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 20811c85050ae40aa859d5ddd4690d15, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  doorID: 
+  doorID: Keramik
 --- !u!212 &1187559244
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -7407,6 +7408,21 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1187559245
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1187559241}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b4f069a2a20ba0248aabf2205e4ac0ce, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sceneToLoad: Outdoor
+  doorID: Keramik
+  doorSound: {fileID: 0}
 --- !u!1 &1198476848
 GameObject:
   m_ObjectHideFlags: 0
@@ -8249,7 +8265,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7383231681795671411, guid: 2e91943c9e71d4ac892eade48a4c0517, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7446932217459774460, guid: 2e91943c9e71d4ac892eade48a4c0517, type: 3}
       propertyPath: m_LocalPosition.x

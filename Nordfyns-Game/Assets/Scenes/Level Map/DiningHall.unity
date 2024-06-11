@@ -33744,11 +33744,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3027981529165322781, guid: 7039477709fdb44138c0c6c09b63192f, type: 3}
       propertyPath: doorID
-      value: DininghallToUdenfor
+      value: DiningHall
       objectReference: {fileID: 0}
     - target: {fileID: 3568964030241520688, guid: 7039477709fdb44138c0c6c09b63192f, type: 3}
       propertyPath: doorID
-      value: DininghallToOutside
+      value: DiningHall
       objectReference: {fileID: 0}
     - target: {fileID: 3568964030241520688, guid: 7039477709fdb44138c0c6c09b63192f, type: 3}
       propertyPath: sceneToLoad
