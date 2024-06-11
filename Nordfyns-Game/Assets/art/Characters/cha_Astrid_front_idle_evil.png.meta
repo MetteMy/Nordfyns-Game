@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: b3f151832bab4ff49b9c7de09dc2dc8b
+guid: 2d5a4390c28b24452b332cc49c90f114
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -110,13 +110,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: cha_mads_evil_0
+      name: cha_Astrid_front_idle_evil_0
       rect:
         serializedVersion: 2
-        x: 16
+        x: 2
         y: 0
-        width: 32
-        height: 50
+        width: 124
+        height: 106
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -124,8 +124,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 92936daa410ec7c4eacea46767fa7d4b
-      internalID: -1968823375
+      spriteID: 28340081250fe463ebb0521475d3a8e5
+      internalID: -137888567
       vertices: []
       indices: 
       edges: []
@@ -141,7 +141,7 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      cha_mads_evil_0: -1968823375
+      cha_Astrid_front_idle_evil_0: -137888567
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

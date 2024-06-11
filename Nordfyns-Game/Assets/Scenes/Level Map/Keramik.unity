@@ -7119,8 +7119,11 @@ MonoBehaviour:
   player: {fileID: 1950411057}
   playerWeapon: {fileID: 1688276957}
   finishSquare: {fileID: 0}
-  GoodversionOfTeacher: {fileID: 8972162431745051374}
-  MirrorTeacher: {fileID: 0}
+  GoodTeacher: {fileID: 0}
+  EvilTeacher: {fileID: 0}
+  BossTeacher: {fileID: 0}
+  respawnScene: 
+  doorID: 
   uiImage: {fileID: 0}
   fadeDuration: 5
   playerBattleEndPos: {fileID: 0}
@@ -7851,11 +7854,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 174011358453433866, guid: 396bfff2f926b4b69a043642893cda28, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 28.4
+      value: -2.99
       objectReference: {fileID: 0}
     - target: {fileID: 174011358453433866, guid: 396bfff2f926b4b69a043642893cda28, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.5
+      value: -2.67
       objectReference: {fileID: 0}
     - target: {fileID: 174011358453433866, guid: 396bfff2f926b4b69a043642893cda28, type: 3}
       propertyPath: m_LocalPosition.z
@@ -8244,6 +8247,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: AstridBoss
       objectReference: {fileID: 0}
+    - target: {fileID: 7383231681795671411, guid: 2e91943c9e71d4ac892eade48a4c0517, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7446932217459774460, guid: 2e91943c9e71d4ac892eade48a4c0517, type: 3}
       propertyPath: m_LocalPosition.x
       value: 7.6
@@ -8267,6 +8274,14 @@ PrefabInstance:
     - target: {fileID: 7446932217459774460, guid: 2e91943c9e71d4ac892eade48a4c0517, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7623826000886659533, guid: 2e91943c9e71d4ac892eade48a4c0517, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -137888567, guid: 2d5a4390c28b24452b332cc49c90f114, type: 3}
+    - target: {fileID: 7623826000886659533, guid: 2e91943c9e71d4ac892eade48a4c0517, type: 3}
+      propertyPath: m_Enabled
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7928891430086011970, guid: 2e91943c9e71d4ac892eade48a4c0517, type: 3}
       propertyPath: spawners.Array.size
@@ -8344,6 +8359,10 @@ PrefabInstance:
       propertyPath: spawnerType
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 8885036402712513200, guid: 2e91943c9e71d4ac892eade48a4c0517, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 2d5a4390c28b24452b332cc49c90f114, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -8368,6 +8387,22 @@ PrefabInstance:
     - target: {fileID: 1558766054842242637, guid: d9299efff57da4dd0a0e643d8cbe0965, type: 3}
       propertyPath: m_Name
       value: AstridNPC
+      objectReference: {fileID: 0}
+    - target: {fileID: 4004630463692686200, guid: d9299efff57da4dd0a0e643d8cbe0965, type: 3}
+      propertyPath: m_Size.x
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4004630463692686200, guid: d9299efff57da4dd0a0e643d8cbe0965, type: 3}
+      propertyPath: m_Size.y
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4004630463692686200, guid: d9299efff57da4dd0a0e643d8cbe0965, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 7783eb8ccfe054cd887ec73be9d4eaac, type: 3}
+    - target: {fileID: 4004630463692686200, guid: d9299efff57da4dd0a0e643d8cbe0965, type: 3}
+      propertyPath: m_WasSpriteAssigned
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4223726827800823607, guid: d9299efff57da4dd0a0e643d8cbe0965, type: 3}
       propertyPath: m_LocalPosition.x
@@ -8421,6 +8456,14 @@ PrefabInstance:
       propertyPath: sentences.Array.data[0]
       value: Hej jeg hedder Astrid
       objectReference: {fileID: 0}
+    - target: {fileID: 8370522418161454204, guid: d9299efff57da4dd0a0e643d8cbe0965, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 1854744151, guid: 7783eb8ccfe054cd887ec73be9d4eaac, type: 3}
+    - target: {fileID: 8370522418161454204, guid: d9299efff57da4dd0a0e643d8cbe0965, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8784818822322915665, guid: d9299efff57da4dd0a0e643d8cbe0965, type: 3}
       propertyPath: enemy
       value: 
@@ -8446,11 +8489,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d9299efff57da4dd0a0e643d8cbe0965, type: 3}
---- !u!1 &8972162431745051374 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1558766054842242637, guid: d9299efff57da4dd0a0e643d8cbe0965, type: 3}
-  m_PrefabInstance: {fileID: 8972162431745051373}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &9092962363322279540
 PrefabInstance:
   m_ObjectHideFlags: 0

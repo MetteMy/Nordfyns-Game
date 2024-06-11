@@ -6,28 +6,22 @@ public class BulletSpawner : MonoBehaviour
 {
     enum SpawnerType { Straight, Spin }
 
-
     [Header("Bullet Attributes")]
     public GameObject bullet;
     public float bulletLife = 1f;
     public float speed = 1f;
 
-
     [Header("Spawner Attributes")]
     [SerializeField] private SpawnerType spawnerType;
     [SerializeField] private float firingRate = 1f;
 
-
     private GameObject spawnedBullet;
     private float timer = 0f;
-    // Start is called before the first frame update
+
     void Start()
     {
-
     }
 
-
-    // Update is called once per frame
     void Update()
     {
         timer += Time.deltaTime;
@@ -39,16 +33,41 @@ public class BulletSpawner : MonoBehaviour
         }
     }
 
-
     private void Fire()
     {
         if (bullet)
         {
-            spawnedBullet = Instantiate(bullet, transform.position, Quaternion.identity);
-            spawnedBullet.GetComponent<Lærkebullet>().speed = speed;
-            spawnedBullet.GetComponent<Lærkebullet>().bulletLife = bulletLife;
-
-            spawnedBullet.transform.rotation = transform.rotation;
+            spawnedBullet = Instantiate(bullet, transform.position, transform.rotation);
+            if (spawnedBullet != null)
+            {
+                var lærkebullet = spawnedBullet.GetComponent<Lærkebullet>();
+                if (lærkebullet != null)
+                {
+                    lærkebullet.speed = speed;
+                    lærkebullet.bulletLife = bulletLife;
+                }
+                else
+                {
+                    var bombSpawnerBullet = spawnedBullet.GetComponent<BombSpawnerBullet>();
+                    if (bombSpawnerBullet != null)
+                    {
+                        bombSpawnerBullet.speed = speed;
+                        bombSpawnerBullet.bulletLife = bulletLife;
+                    }
+                    else
+                    {
+                        Debug.LogWarning("Spawned bullet does not have Lærkebullet or BombSpawnerBullet component.");
+                    }
+                }
+            }
+            else
+            {
+                Debug.LogError("Failed to instantiate bullet.");
+            }
+        }
+        else
+        {
+            Debug.LogError("Bullet prefab is not assigned.");
         }
     }
 }
