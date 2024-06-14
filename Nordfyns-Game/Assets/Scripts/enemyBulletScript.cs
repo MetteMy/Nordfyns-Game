@@ -14,7 +14,8 @@ public class enemyBulletScript : MonoBehaviour
     void Start()
     {
         
-        if (gameObject.name == "enemyBullet(Clone)"){
+        if (gameObject.name == "enemyBullet(Clone)" || gameObject.name =="PieChartBullet(Clone)"|| gameObject.name =="songBookBullet(Clone)"){
+            Debug.Log("enemybullet");
             
             playerPos = playerTransform.position;
             

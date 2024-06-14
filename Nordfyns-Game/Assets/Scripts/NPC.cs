@@ -29,7 +29,7 @@ public class NPC : MonoBehaviour
             
 
         }
-        if (TriggersBossBattle == true && hasbeenTriggered ==true && dialogueManager.isDialogueActive == false){
+        if (TriggersBossBattle == true && hasbeenTriggered == true && dialogueManager.isDialogueActive == false){
                             
             Debug.Log("boss battle");
             startBossbattleScript.StartBattle();

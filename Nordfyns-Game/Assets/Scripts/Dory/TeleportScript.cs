@@ -3,6 +3,7 @@ using UnityEngine;
 public class BossTeleportScript : MonoBehaviour
 {
     public Transform[] teleportPoints;
+    private int index;  
 
     public void Teleport()
     {
@@ -14,5 +15,14 @@ public class BossTeleportScript : MonoBehaviour
         }
     }
 
+
+    public void TeleportToNextState(){
+
+        if (teleportPoints.Length > 0)
+        {
+            transform.position = teleportPoints[index].position;
+            index ++; 
+        }
+    }
   
 }

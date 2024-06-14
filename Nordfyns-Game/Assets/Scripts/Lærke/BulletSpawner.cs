@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class BulletSpawner : MonoBehaviour
 {
-    enum SpawnerType { Straight, Spin, Wave }
+    enum SpawnerType { Straight, Spin, Wave, FollowPlayer }
 
     [Header("Bullet Attributes")]
     public GameObject bullet;
@@ -51,6 +51,9 @@ public class BulletSpawner : MonoBehaviour
             if (spawnerType == SpawnerType.Wave)
             {
                 FireWave();
+            }
+            else if (spawnerType == SpawnerType.FollowPlayer){
+                FireAtPlayer();
             }
             else
             {
@@ -129,5 +132,13 @@ public class BulletSpawner : MonoBehaviour
             spawnedBullet.GetComponent<Lærkebullet>().bulletLife = bulletLife;
 
         }
+    }
+
+        private void FireAtPlayer()
+    {
+        GameObject spawnedBullet = Instantiate(bullet, transform.position, Quaternion.identity);
+        enemyBulletScript enemyBullet = spawnedBullet.GetComponent<enemyBulletScript>();
+        enemyBullet.force = speed;
+        
     }
 }
