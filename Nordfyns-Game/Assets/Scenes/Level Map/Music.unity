@@ -44815,9 +44815,13 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3027981529165322781, guid: 7039477709fdb44138c0c6c09b63192f, type: 3}
+      propertyPath: doorID
+      value: Music
+      objectReference: {fileID: 0}
     - target: {fileID: 3568964030241520688, guid: 7039477709fdb44138c0c6c09b63192f, type: 3}
       propertyPath: doorID
-      value: MusicDoor
+      value: Music
       objectReference: {fileID: 0}
     - target: {fileID: 3568964030241520688, guid: 7039477709fdb44138c0c6c09b63192f, type: 3}
       propertyPath: sceneToLoad
@@ -44851,7 +44855,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 20811c85050ae40aa859d5ddd4690d15, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  doorID: musicDoor
+  doorID: Music
 --- !u!4 &1709459227 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2876560199119483969, guid: 7039477709fdb44138c0c6c09b63192f, type: 3}

@@ -5411,8 +5411,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b4f069a2a20ba0248aabf2205e4ac0ce, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneToLoad: Udenfor
-  doorID: Door1
+  sceneToLoad: Outdoor
+  doorID: Krea
   doorSound: {fileID: 0}
 --- !u!4 &1223476012 stripped
 Transform:

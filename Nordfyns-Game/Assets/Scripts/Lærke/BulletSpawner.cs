@@ -19,7 +19,7 @@ public class BulletSpawner : MonoBehaviour
     [SerializeField] private float angleSpread = 45f;
 
     [Header("Direction Attributes")]
-    public Vector2 fireDirection = Vector2.right; 
+    public Vector2 fireDirection = Vector2.right;
 
 
     private GameObject spawnedBullet;
@@ -45,7 +45,7 @@ public class BulletSpawner : MonoBehaviour
 
     private void Fire()
     {
-        
+
         if (bullet)
         {
             if (spawnerType == SpawnerType.Wave)
@@ -62,7 +62,7 @@ public class BulletSpawner : MonoBehaviour
             Debug.LogError("Bullet prefab is not assigned.");
         }
 
-        
+
         // if (bullet)
         // {
         //     spawnedBullet = Instantiate(bullet, transform.position, Quaternion.identity);
@@ -122,12 +122,13 @@ public class BulletSpawner : MonoBehaviour
         {
             float angle = startingAngle + (angleStep * i);
             Vector2 direction = Quaternion.Euler(0, 0, angle) * fireDirection;
-             Quaternion bulletRotation = Quaternion.LookRotation(Vector3.forward, direction);
+            Quaternion bulletRotation = Quaternion.LookRotation(Vector3.forward, direction);
             //Quaternion bulletRotation = Quaternion.Euler(new Vector3(0, 0, angle));
             GameObject spawnedBullet = Instantiate(bullet, transform.position, bulletRotation);
             spawnedBullet.GetComponent<Lærkebullet>().speed = speed;
             spawnedBullet.GetComponent<Lærkebullet>().bulletLife = bulletLife;
-            
+
+        }
     }
 }
 }

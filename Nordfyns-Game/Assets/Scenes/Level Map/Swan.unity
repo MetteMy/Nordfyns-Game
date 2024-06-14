@@ -46942,9 +46942,15 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 3568964030241520688, guid: 7039477709fdb44138c0c6c09b63192f, type: 3}
-    - {fileID: 3027981529165322781, guid: 7039477709fdb44138c0c6c09b63192f, type: 3}
+    - target: {fileID: 3027981529165322781, guid: 7039477709fdb44138c0c6c09b63192f, type: 3}
+      propertyPath: doorID
+      value: Swan
+      objectReference: {fileID: 0}
+    - target: {fileID: 3568964030241520688, guid: 7039477709fdb44138c0c6c09b63192f, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects:
     - targetCorrespondingSourceObject: {fileID: 2876560199119483969, guid: 7039477709fdb44138c0c6c09b63192f, type: 3}
@@ -46989,7 +46995,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sceneToLoad: Outdoor
-  doorID: SwanDoor
+  doorID: Swan
   doorSound: {fileID: 0}
 --- !u!4 &1709459227 stripped
 Transform:
