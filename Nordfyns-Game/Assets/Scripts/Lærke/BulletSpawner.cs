@@ -19,7 +19,7 @@ public class BulletSpawner : MonoBehaviour
     [SerializeField] private float angleSpread = 45f;
 
     [Header("Direction Attributes")]
-    public Vector2 fireDirection = Vector2.right; 
+    public Vector2 fireDirection = Vector2.right;
 
 
     private GameObject spawnedBullet;
@@ -45,7 +45,7 @@ public class BulletSpawner : MonoBehaviour
 
     private void Fire()
     {
-        
+
         if (bullet)
         {
             if (spawnerType == SpawnerType.Wave)
@@ -58,7 +58,7 @@ public class BulletSpawner : MonoBehaviour
             }
         }
 
-        
+
         // if (bullet)
         // {
         //     spawnedBullet = Instantiate(bullet, transform.position, Quaternion.identity);
@@ -79,37 +79,33 @@ public class BulletSpawner : MonoBehaviour
         //spawnedBullet.transform.rotation = transform.rotation;
 
         spawnedBullet = Instantiate(bullet, transform.position, transform.rotation);
-            if (spawnedBullet != null)
+        if (spawnedBullet != null)
+        {
+            var lærkebullet = spawnedBullet.GetComponent<Lærkebullet>();
+            if (lærkebullet != null)
             {
-                var lærkebullet = spawnedBullet.GetComponent<Lærkebullet>();
-                if (lærkebullet != null)
-                {
-                    lærkebullet.speed = speed;
-                    lærkebullet.bulletLife = bulletLife;
-                }
-                else
-                {
-                    var bombSpawnerBullet = spawnedBullet.GetComponent<BombSpawnerBullet>();
-                    if (bombSpawnerBullet != null)
-                    {
-                        bombSpawnerBullet.speed = speed;
-                        bombSpawnerBullet.bulletLife = bulletLife;
-                    }
-                    else
-                    {
-                        Debug.LogWarning("Spawned bullet does not have Lærkebullet or BombSpawnerBullet component.");
-                    }
-                }
+                lærkebullet.speed = speed;
+                lærkebullet.bulletLife = bulletLife;
             }
             else
             {
-                Debug.LogError("Failed to instantiate bullet.");
+                var bombSpawnerBullet = spawnedBullet.GetComponent<BombSpawnerBullet>();
+                if (bombSpawnerBullet != null)
+                {
+                    bombSpawnerBullet.speed = speed;
+                    bombSpawnerBullet.bulletLife = bulletLife;
+                }
+                else
+                {
+                    Debug.LogWarning("Spawned bullet does not have Lærkebullet or BombSpawnerBullet component.");
+                }
             }
         }
         else
         {
-            Debug.LogError("Bullet prefab is not assigned.");
+            Debug.LogError("Failed to instantiate bullet.");
         }
+
     }
 
     private void FireWave()
@@ -121,11 +117,12 @@ public class BulletSpawner : MonoBehaviour
         {
             float angle = startingAngle + (angleStep * i);
             Vector2 direction = Quaternion.Euler(0, 0, angle) * fireDirection;
-             Quaternion bulletRotation = Quaternion.LookRotation(Vector3.forward, direction);
+            Quaternion bulletRotation = Quaternion.LookRotation(Vector3.forward, direction);
             //Quaternion bulletRotation = Quaternion.Euler(new Vector3(0, 0, angle));
             GameObject spawnedBullet = Instantiate(bullet, transform.position, bulletRotation);
             spawnedBullet.GetComponent<Lærkebullet>().speed = speed;
             spawnedBullet.GetComponent<Lærkebullet>().bulletLife = bulletLife;
-            
+
+        }
     }
 }
