@@ -348,38 +348,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8150310705395274308, guid: 8bfab911352a04e93b263ff2a4c2373f, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 8150310705395274308, guid: 8bfab911352a04e93b263ff2a4c2373f, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 283670520}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8bfab911352a04e93b263ff2a4c2373f, type: 3}
 --- !u!1 &283670514 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8150310705395274308, guid: 8bfab911352a04e93b263ff2a4c2373f, type: 3}
   m_PrefabInstance: {fileID: 283670513}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &283670520
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 283670514}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 177039fe4a8441549b008ab92fe40cd2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  player: {fileID: 213737937}
-  playerWeapon: {fileID: 22459629}
-  enemy: {fileID: 7383231682510640782}
-  Bossbattle: {fileID: 1777873222}
-  playerBattleStartPos: {fileID: 2047602188}
 --- !u!1 &289726752
 GameObject:
   m_ObjectHideFlags: 0
@@ -75893,24 +75873,56 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4222971590905482277, guid: 8bfab911352a04e93b263ff2a4c2373f, type: 3}
+      propertyPath: canTalk
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4222971590905482277, guid: 8bfab911352a04e93b263ff2a4c2373f, type: 3}
+      propertyPath: dialogueManager
+      value: 
+      objectReference: {fileID: 1488612559}
+    - target: {fileID: 4222971590905482277, guid: 8bfab911352a04e93b263ff2a4c2373f, type: 3}
+      propertyPath: TriggersBossBattle
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8150310705395274308, guid: 8bfab911352a04e93b263ff2a4c2373f, type: 3}
       propertyPath: m_Name
       value: MattiasEvil
       objectReference: {fileID: 0}
     - target: {fileID: 8150310705395274308, guid: 8bfab911352a04e93b263ff2a4c2373f, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 8150310705395274308, guid: 8bfab911352a04e93b263ff2a4c2373f, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1353188882}
   m_SourcePrefab: {fileID: 100100000, guid: 8bfab911352a04e93b263ff2a4c2373f, type: 3}
 --- !u!1 &1353188876 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8150310705395274308, guid: 8bfab911352a04e93b263ff2a4c2373f, type: 3}
   m_PrefabInstance: {fileID: 1353188875}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1353188882
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1353188876}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 177039fe4a8441549b008ab92fe40cd2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 213737937}
+  playerWeapon: {fileID: 22459629}
+  enemy: {fileID: 7383231682510640782}
+  Bossbattle: {fileID: 1777873222}
+  playerBattleStartPos: {fileID: 2047602188}
 --- !u!114 &1488612559 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 6134374527219143554, guid: 0510e94a8c695489b800d1cdff7e66d4, type: 3}
@@ -76530,10 +76542,6 @@ PrefabInstance:
     - target: {fileID: 755812487610516982, guid: d01552dbb56734b09808dd18a7e7c58f, type: 3}
       propertyPath: healthBar
       value: 
-      objectReference: {fileID: 197108841}
-    - target: {fileID: 755812487610516982, guid: d01552dbb56734b09808dd18a7e7c58f, type: 3}
-      propertyPath: healthBar
-      value: 
       objectReference: {fileID: 1844724709}
     - target: {fileID: 1143631091272048890, guid: d01552dbb56734b09808dd18a7e7c58f, type: 3}
       propertyPath: m_LocalPosition.x
@@ -76686,4 +76694,3 @@ SceneRoots:
   - {fileID: 1910253763}
   - {fileID: 2047602188}
   - {fileID: 1580160032}
-  - {fileID: 1199661949}
