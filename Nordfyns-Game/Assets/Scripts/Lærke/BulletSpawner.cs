@@ -57,6 +57,10 @@ public class BulletSpawner : MonoBehaviour
                 FireSingle();
             }
         }
+        else
+        {
+            Debug.LogError("Bullet prefab is not assigned.");
+        }
 
         
         // if (bullet)
@@ -106,11 +110,8 @@ public class BulletSpawner : MonoBehaviour
                 Debug.LogError("Failed to instantiate bullet.");
             }
         }
-        else
-        {
-            Debug.LogError("Bullet prefab is not assigned.");
-        }
-    }
+        
+    
 
     private void FireWave()
     {
@@ -128,4 +129,5 @@ public class BulletSpawner : MonoBehaviour
             spawnedBullet.GetComponent<Lærkebullet>().bulletLife = bulletLife;
             
     }
+}
 }
