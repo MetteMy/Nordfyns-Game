@@ -7410,6 +7410,7 @@ MonoBehaviour:
   sceneToLoad: Outdoor
   doorID: Keramik
   doorSound: {fileID: 0}
+  requiredBossesDefeated: 0
 --- !u!61 &1187559246
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -8368,11 +8369,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2494912258215061135, guid: f1969a83855394624b4a53b94359fe25, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -9.4
+      value: -11.3
       objectReference: {fileID: 0}
     - target: {fileID: 2494912258215061135, guid: f1969a83855394624b4a53b94359fe25, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 17.5
+      value: 19.1
       objectReference: {fileID: 0}
     - target: {fileID: 3649376159184360196, guid: f1969a83855394624b4a53b94359fe25, type: 3}
       propertyPath: m_LocalPosition.x
@@ -8901,6 +8902,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2073570762551490843, guid: b4e01b94ee164486c8947943f9d0a619, type: 3}
+      propertyPath: prefabs.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 2073570762551490843, guid: b4e01b94ee164486c8947943f9d0a619, type: 3}
       propertyPath: activationThreshold
       value: 1
       objectReference: {fileID: 0}
@@ -8908,6 +8913,10 @@ PrefabInstance:
       propertyPath: npcPrefabs.Array.size
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 2073570762551490843, guid: b4e01b94ee164486c8947943f9d0a619, type: 3}
+      propertyPath: prefabs.Array.data[3]
+      value: 
+      objectReference: {fileID: 353776287}
     - target: {fileID: 2073570762551490843, guid: b4e01b94ee164486c8947943f9d0a619, type: 3}
       propertyPath: npcPrefabs.Array.data[0]
       value: 
