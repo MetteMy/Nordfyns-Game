@@ -9,6 +9,7 @@ public class SceneTransition : MonoBehaviour
     public string doorID;
     private bool canTransition;
     public AudioClip doorSound;
+    public int requiredBossesDefeated; // The number of bosses that need to be defeated to transition
 
     private void Start()
     {
@@ -17,7 +18,7 @@ public class SceneTransition : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.E) && canTransition == true)
+        if (Input.GetKeyDown(KeyCode.E) && canTransition)
         {
             GameManager.Instance.lastDoorID = doorID;
             Debug.Log("Setting lastDoorID to: " + doorID);
@@ -25,7 +26,6 @@ public class SceneTransition : MonoBehaviour
             canTransition = false;
             PlayDoorSound();
         }
-        
     }
 
     private void OnTriggerEnter2D(Collider2D other)
@@ -34,14 +34,21 @@ public class SceneTransition : MonoBehaviour
 
         if (other.CompareTag("Player"))
         {
-            canTransition = true;
+            // Check if the required number of bosses have been defeated
+            if (GameManager.Instance.bossesDefeated >= requiredBossesDefeated)
+            {
+                canTransition = true;
+            }
+            else
+            {
+                canTransition = false;
+                Debug.Log("Not enough bosses defeated to transition.");
+            }
         }
     }
 
     private void OnTriggerExit2D(Collider2D other)
     {
-        
-
         if (other.CompareTag("Player"))
         {
             canTransition = false;
