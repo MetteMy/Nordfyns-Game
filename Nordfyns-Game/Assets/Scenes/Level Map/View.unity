@@ -16850,9 +16850,18 @@ MonoBehaviour:
   dialogueManager: {fileID: 486825519}
   canTalk: 1
   sentences:
-  - didjwoajdo
-  - Ye
-  - Right
+  - Huh what the hell just happened?
+  - I felt a little off for a while.
+  - Did you help me?
+  - Oh! Thank you for that!
+  - Now, if you'll excuse me.
+  - I just remembered that someone entered during the middle of my class.
+  - I have to go yell at this stupid stupid student.
+  - (You can't help but feel bad, even if things have returned to normal)
+  - Wait...
+  - What's that noise?
+  - Do you hear it?
+  - It is coming from the dining hall?
   TriggersBossBattle: 0
 --- !u!212 &558081841
 SpriteRenderer:
@@ -24901,9 +24910,17 @@ MonoBehaviour:
   dialogueManager: {fileID: 486825519}
   canTalk: 1
   sentences:
-  - Ye
-  - Yeah
-  - Right
+  - N-no! why did you shoot my teammates...
+  - y-you're playing the game wrong...
+  - '*shudder*'
+  - It's too scary, i would rather p-play s-singleplayer games...!
+  - i wish i could f-fit in more...
+  - No one likes me... I'm so scare to go outside...
+  - How should i improve myself so that others will like me...?
+  - EE-EEK!!
+  - Wh-what do you want!?
+  - L-leave me alone! I don't have the energy to t-talk!
+  - I-if you won't l-leave.. th-then I'll make you!
   TriggersBossBattle: 1
 --- !u!212 &1472072338
 SpriteRenderer:

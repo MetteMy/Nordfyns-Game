@@ -22522,9 +22522,16 @@ MonoBehaviour:
   dialogueManager: {fileID: 430195609}
   canTalk: 1
   sentences:
-  - didjwoajdo
-  - Ye
-  - Right
+  - Oh hello there.
+  - I felt I dazed out for a moment there.
+  - I wonder what happened.
+  - Somehow, I feel like you helped me.
+  - You have my gratitude.
+  - Thank you.
+  - Please, I think something is corrupting the teachers.
+  - Can you help us figure out what's wrong?
+  - Rasmus was acting very strange earlier.
+  - Can you go to the View to make sure he's okay?
   TriggersBossBattle: 0
 --- !u!212 &1411452524
 SpriteRenderer:
@@ -44473,9 +44480,16 @@ MonoBehaviour:
   dialogueManager: {fileID: 430195609}
   canTalk: 1
   sentences:
-  - Ye
-  - Yeah
-  - Right
+  - OM NOM NOM!!! MMM THAT'S MORE LIKE IT!!!
+  - AAA!! I love doritos!!! But my patience is wearing thin!!!
+  - Give me more!!! Give me more!!!
+  - HUH!?!?!?! What do you want!??!
+  - Can't you see i'm busy?!?!?!
+  - LEAVE ME ALONE!!! RAARGH!!!
+  - '*throws a dorito at you*'
+  - IF NOT I WILL FORCE YOU TO LEAVE
+  - '*let''s out a primal scream*'
+  - RAAAAAAAAARRRRRGGGHHH!!!!!!
   TriggersBossBattle: 1
 --- !u!212 &1677396300
 SpriteRenderer:
