@@ -8279,6 +8279,14 @@ PrefabInstance:
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 1406345259}
+    - target: {fileID: 6489249590177061485, guid: 396bfff2f926b4b69a043642893cda28, type: 3}
+      propertyPath: healthBar
+      value: 
+      objectReference: {fileID: 1426792031}
+    - target: {fileID: 6489249590177061485, guid: 396bfff2f926b4b69a043642893cda28, type: 3}
+      propertyPath: spawnLocation
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 7768083239127423700, guid: 396bfff2f926b4b69a043642893cda28, type: 3}
       propertyPath: m_IsActive
       value: 0

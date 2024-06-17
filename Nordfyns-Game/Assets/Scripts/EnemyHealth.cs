@@ -37,7 +37,7 @@ public class EnemyHealth : MonoBehaviour
             Destroy(gameObject);
         }
 
-        if (health <= 20)
+        if (health <= 20f)
         {
             //animator.SetBool("IsEnraged", true);
         }
