@@ -11087,9 +11087,17 @@ MonoBehaviour:
   dialogueManager: {fileID: 430195609}
   canTalk: 1
   sentences:
-  - didjwoajdo
-  - Ye
-  - Right
+  - I...
+  - I feel like a weight has been lifted from my shoulders.
+  - I feel *WAY* more enrgetic, ya!?
+  - I suddenly have this urge to make a change in the world!
+  - Thank you!
+  - For some reason, i feel like YOU helped, ya?
+  - The other teachers are acting strange.
+  - Be cool and do me a favor, ya?
+  - Let's help them out!
+  - Let's change the world!
+  - Starting with our little school!!!
   TriggersBossBattle: 0
 --- !u!212 &1411452524
 SpriteRenderer:
@@ -46654,9 +46662,20 @@ MonoBehaviour:
   dialogueManager: {fileID: 430195609}
   canTalk: 1
   sentences:
-  - Ye
-  - Yeah
-  - Right
+  - Hmm...
+  - What do you want?
+  - I'm busy, nah?
+  - Please leave me alone.
+  - '*sigh*'
+  - You want to 'free' me?
+  - What nonsense...
+  - Sounds like something from a fairy-tale.
+  - I don't care.
+  - The world is screwed.
+  - We can't do anything to change it, nah?
+  - Try as you might...
+  - but I doubt you can change ANYTHING.
+  - I won't go down without a fight.
   TriggersBossBattle: 1
 --- !u!212 &1677396300
 SpriteRenderer:

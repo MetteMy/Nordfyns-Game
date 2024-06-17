@@ -5062,19 +5062,63 @@ PrefabInstance:
       objectReference: {fileID: 92737361}
     - target: {fileID: 4222971590905482277, guid: 8bfab911352a04e93b263ff2a4c2373f, type: 3}
       propertyPath: TriggersBossBattle
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4222971590905482277, guid: 8bfab911352a04e93b263ff2a4c2373f, type: 3}
       propertyPath: sentences.Array.size
-      value: 2
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 4222971590905482277, guid: 8bfab911352a04e93b263ff2a4c2373f, type: 3}
       propertyPath: sentences.Array.data[0]
-      value: "Hej jeg hedder l\xE6rke"
+      value: Huh? What happened?
       objectReference: {fileID: 0}
     - target: {fileID: 4222971590905482277, guid: 8bfab911352a04e93b263ff2a4c2373f, type: 3}
       propertyPath: sentences.Array.data[1]
-      value: "Nu skal du d\xF8"
+      value: I feel better all of a sudden.
+      objectReference: {fileID: 0}
+    - target: {fileID: 4222971590905482277, guid: 8bfab911352a04e93b263ff2a4c2373f, type: 3}
+      propertyPath: sentences.Array.data[2]
+      value: I think I was having a long nightmare, where I was this evil being.
+      objectReference: {fileID: 0}
+    - target: {fileID: 4222971590905482277, guid: 8bfab911352a04e93b263ff2a4c2373f, type: 3}
+      propertyPath: sentences.Array.data[3]
+      value: Somehow, I feel I have you to thank for this
+      objectReference: {fileID: 0}
+    - target: {fileID: 4222971590905482277, guid: 8bfab911352a04e93b263ff2a4c2373f, type: 3}
+      propertyPath: sentences.Array.data[4]
+      value: Thank you so much. Thank you for all your effort.
+      objectReference: {fileID: 0}
+    - target: {fileID: 4222971590905482277, guid: 8bfab911352a04e93b263ff2a4c2373f, type: 3}
+      propertyPath: sentences.Array.data[5]
+      value: I appreciate it a lot.
+      objectReference: {fileID: 0}
+    - target: {fileID: 4222971590905482277, guid: 8bfab911352a04e93b263ff2a4c2373f, type: 3}
+      propertyPath: sentences.Array.data[6]
+      value: Perhaps you can check on Astrid in Ceramics Class.
+      objectReference: {fileID: 0}
+    - target: {fileID: 4222971590905482277, guid: 8bfab911352a04e93b263ff2a4c2373f, type: 3}
+      propertyPath: sentences.Array.data[7]
+      value: She was acting very strange earlier.
+      objectReference: {fileID: 0}
+    - target: {fileID: 4222971590905482277, guid: 8bfab911352a04e93b263ff2a4c2373f, type: 3}
+      propertyPath: sentences.Array.data[8]
+      value: I hope she's okay!
+      objectReference: {fileID: 0}
+    - target: {fileID: 4222971590905482277, guid: 8bfab911352a04e93b263ff2a4c2373f, type: 3}
+      propertyPath: sentences.Array.data[9]
+      value: Good luck!
+      objectReference: {fileID: 0}
+    - target: {fileID: 4222971590905482277, guid: 8bfab911352a04e93b263ff2a4c2373f, type: 3}
+      propertyPath: sentences.Array.data[10]
+      value: Good luck!
+      objectReference: {fileID: 0}
+    - target: {fileID: 4222971590905482277, guid: 8bfab911352a04e93b263ff2a4c2373f, type: 3}
+      propertyPath: sentences.Array.data[11]
+      value: Good luck
+      objectReference: {fileID: 0}
+    - target: {fileID: 4222971590905482277, guid: 8bfab911352a04e93b263ff2a4c2373f, type: 3}
+      propertyPath: sentences.Array.data[12]
+      value: I hope she's okay!
       objectReference: {fileID: 0}
     - target: {fileID: 5180184896994924575, guid: 8bfab911352a04e93b263ff2a4c2373f, type: 3}
       propertyPath: m_SpriteTilingProperty.oldSize.y
@@ -6099,9 +6143,14 @@ MonoBehaviour:
   dialogueManager: {fileID: 92737361}
   canTalk: 1
   sentences:
-  - Ye
-  - Yeah
-  - Right
+  - Hmmph.
+  - A little maggot has crawled into my lair, it would seem.
+  - Tell me, weakling. What do you hope to achieve here?
+  - No, actually I don't give a crap.
+  - I'm getting impatient.
+  - You're pathetic. I'm sick of this.
+  - Do not dare to venture further into my lair, lest I murder you.
+  - That's it, prepare to die, maggot!
   TriggersBossBattle: 1
 --- !u!212 &2079480072
 SpriteRenderer:

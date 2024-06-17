@@ -375,6 +375,47 @@ PrefabInstance:
       propertyPath: TriggersBossBattle
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4222971590905482277, guid: 8bfab911352a04e93b263ff2a4c2373f, type: 3}
+      propertyPath: sentences.Array.size
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 4222971590905482277, guid: 8bfab911352a04e93b263ff2a4c2373f, type: 3}
+      propertyPath: sentences.Array.data[0]
+      value: Gah! What happened...?
+      objectReference: {fileID: 0}
+    - target: {fileID: 4222971590905482277, guid: 8bfab911352a04e93b263ff2a4c2373f, type: 3}
+      propertyPath: sentences.Array.data[1]
+      value: I had this weird horrible nightmare. As though something had taken ahold
+        of me.
+      objectReference: {fileID: 0}
+    - target: {fileID: 4222971590905482277, guid: 8bfab911352a04e93b263ff2a4c2373f, type: 3}
+      propertyPath: sentences.Array.data[2]
+      value: I was a vegetable-hating-monarchy-shilling-nationalist-neo-liberal capitalist.
+      objectReference: {fileID: 0}
+    - target: {fileID: 4222971590905482277, guid: 8bfab911352a04e93b263ff2a4c2373f, type: 3}
+      propertyPath: sentences.Array.data[3]
+      value: Haha, as it that ever would happen!
+      objectReference: {fileID: 0}
+    - target: {fileID: 4222971590905482277, guid: 8bfab911352a04e93b263ff2a4c2373f, type: 3}
+      propertyPath: sentences.Array.data[4]
+      value: I have this weird feeling you helped.
+      objectReference: {fileID: 0}
+    - target: {fileID: 4222971590905482277, guid: 8bfab911352a04e93b263ff2a4c2373f, type: 3}
+      propertyPath: sentences.Array.data[5]
+      value: Somehow, I feel I have to thank you.
+      objectReference: {fileID: 0}
+    - target: {fileID: 4222971590905482277, guid: 8bfab911352a04e93b263ff2a4c2373f, type: 3}
+      propertyPath: sentences.Array.data[6]
+      value: I heard some loud noises coming from music earlier.
+      objectReference: {fileID: 0}
+    - target: {fileID: 4222971590905482277, guid: 8bfab911352a04e93b263ff2a4c2373f, type: 3}
+      propertyPath: sentences.Array.data[7]
+      value: Any idea what's happening?
+      objectReference: {fileID: 0}
+    - target: {fileID: 4222971590905482277, guid: 8bfab911352a04e93b263ff2a4c2373f, type: 3}
+      propertyPath: sentences.Array.data[8]
+      value: I hope Asmus is okay.
+      objectReference: {fileID: 0}
     - target: {fileID: 8150310705395274308, guid: 8bfab911352a04e93b263ff2a4c2373f, type: 3}
       propertyPath: m_Name
       value: MattiasGood
@@ -76003,6 +76044,63 @@ PrefabInstance:
     - target: {fileID: 4222971590905482277, guid: 8bfab911352a04e93b263ff2a4c2373f, type: 3}
       propertyPath: TriggersBossBattle
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4222971590905482277, guid: 8bfab911352a04e93b263ff2a4c2373f, type: 3}
+      propertyPath: sentences.Array.size
+      value: 13
+      objectReference: {fileID: 0}
+    - target: {fileID: 4222971590905482277, guid: 8bfab911352a04e93b263ff2a4c2373f, type: 3}
+      propertyPath: sentences.Array.data[0]
+      value: Hmm, no.. I must be careful which stocks i buy too.
+      objectReference: {fileID: 0}
+    - target: {fileID: 4222971590905482277, guid: 8bfab911352a04e93b263ff2a4c2373f, type: 3}
+      propertyPath: sentences.Array.data[1]
+      value: If i do that, then my private NFT will lose it's value...
+      objectReference: {fileID: 0}
+    - target: {fileID: 4222971590905482277, guid: 8bfab911352a04e93b263ff2a4c2373f, type: 3}
+      propertyPath: sentences.Array.data[2]
+      value: Tch! I also have to plan for christmas in 5 months!
+      objectReference: {fileID: 0}
+    - target: {fileID: 4222971590905482277, guid: 8bfab911352a04e93b263ff2a4c2373f, type: 3}
+      propertyPath: sentences.Array.data[3]
+      value: Damn, stupid commies!
+      objectReference: {fileID: 0}
+    - target: {fileID: 4222971590905482277, guid: 8bfab911352a04e93b263ff2a4c2373f, type: 3}
+      propertyPath: sentences.Array.data[4]
+      value: They tried to complain about my oil rig!
+      objectReference: {fileID: 0}
+    - target: {fileID: 4222971590905482277, guid: 8bfab911352a04e93b263ff2a4c2373f, type: 3}
+      propertyPath: sentences.Array.data[5]
+      value: None of their business, I rake in those profits, baby!
+      objectReference: {fileID: 0}
+    - target: {fileID: 4222971590905482277, guid: 8bfab911352a04e93b263ff2a4c2373f, type: 3}
+      propertyPath: sentences.Array.data[6]
+      value: I do it for the sake of my country, and to boost my economy.
+      objectReference: {fileID: 0}
+    - target: {fileID: 4222971590905482277, guid: 8bfab911352a04e93b263ff2a4c2373f, type: 3}
+      propertyPath: sentences.Array.data[7]
+      value: Huh?! Who are you?
+      objectReference: {fileID: 0}
+    - target: {fileID: 4222971590905482277, guid: 8bfab911352a04e93b263ff2a4c2373f, type: 3}
+      propertyPath: sentences.Array.data[8]
+      value: How long have you been standing there?
+      objectReference: {fileID: 0}
+    - target: {fileID: 4222971590905482277, guid: 8bfab911352a04e93b263ff2a4c2373f, type: 3}
+      propertyPath: sentences.Array.data[9]
+      value: Leave! I'm busy, don't interrupt me!
+      objectReference: {fileID: 0}
+    - target: {fileID: 4222971590905482277, guid: 8bfab911352a04e93b263ff2a4c2373f, type: 3}
+      propertyPath: sentences.Array.data[10]
+      value: 'If you dont leave, I''ll probably hire a  war profiteering private
+        army to dispose of you! '
+      objectReference: {fileID: 0}
+    - target: {fileID: 4222971590905482277, guid: 8bfab911352a04e93b263ff2a4c2373f, type: 3}
+      propertyPath: sentences.Array.data[11]
+      value: Fine, I'll do it myself.
+      objectReference: {fileID: 0}
+    - target: {fileID: 4222971590905482277, guid: 8bfab911352a04e93b263ff2a4c2373f, type: 3}
+      propertyPath: sentences.Array.data[12]
+      value: GOD SAVE THE KING!
       objectReference: {fileID: 0}
     - target: {fileID: 8150310705395274308, guid: 8bfab911352a04e93b263ff2a4c2373f, type: 3}
       propertyPath: m_Name

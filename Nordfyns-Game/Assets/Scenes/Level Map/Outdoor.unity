@@ -2254,6 +2254,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6134374527219143554, guid: 0510e94a8c695489b800d1cdff7e66d4, type: 3}
+      propertyPath: dialogueText
+      value: 
+      objectReference: {fileID: 946512055}
+    - target: {fileID: 6134374527219143554, guid: 0510e94a8c695489b800d1cdff7e66d4, type: 3}
+      propertyPath: dialoguePanel
+      value: 
+      objectReference: {fileID: 946512054}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2854,6 +2862,22 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 396bfff2f926b4b69a043642893cda28, type: 3}
+--- !u!1 &946512054 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4436451052227407368, guid: 396bfff2f926b4b69a043642893cda28, type: 3}
+  m_PrefabInstance: {fileID: 946512053}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &946512055 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5420717461297958332, guid: 396bfff2f926b4b69a043642893cda28, type: 3}
+  m_PrefabInstance: {fileID: 946512053}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &994865449
 GameObject:
   m_ObjectHideFlags: 0
