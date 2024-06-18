@@ -5311,6 +5311,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1517671498620352141, guid: c81db97f20a094df1ba86af97044b6af, type: 3}
+      propertyPath: BossMusic
+      value: 
+      objectReference: {fileID: 8300000, guid: c2ed0430474fe45499ff65ef70363110, type: 3}
     - target: {fileID: 4222172468616931759, guid: c81db97f20a094df1ba86af97044b6af, type: 3}
       propertyPath: m_Name
       value: AudioManager
@@ -5604,7 +5608,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sceneToLoad: Outdoor
   doorID: Krea
-  doorSound: {fileID: 0}
+  doorSound: {fileID: 8300000, guid: 1f77b13f912af4cf997fffddf7a051df, type: 3}
+  lockSound: {fileID: 8300000, guid: f5b6c98a7768d43ff91213fbb04e2a9b, type: 3}
   requiredBossesDefeated: 0
 --- !u!4 &1223476012 stripped
 Transform:
