@@ -9,6 +9,7 @@ public class SceneTransition : MonoBehaviour
     public string doorID;
     private bool canTransition;
     public AudioClip doorSound;
+    public AudioClip lockSound; // Sound to play when transition is not allowed
     public int requiredBossesDefeated; // The number of bosses that need to be defeated to transition
 
     private void Start()
@@ -18,13 +19,20 @@ public class SceneTransition : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.E) && canTransition)
+        if (Input.GetKeyDown(KeyCode.E))
         {
-            GameManager.Instance.lastDoorID = doorID;
-            Debug.Log("Setting lastDoorID to: " + doorID);
-            SceneManager.LoadScene(sceneToLoad);
-            canTransition = false;
-            PlayDoorSound();
+            if (canTransition)
+            {
+                GameManager.Instance.lastDoorID = doorID;
+                Debug.Log("Setting lastDoorID to: " + doorID);
+                SceneManager.LoadScene(sceneToLoad);
+                canTransition = false;
+                PlayDoorSound();
+            }
+            else
+            {
+                PlayLockSound(); // Play the lock sound if transition is not allowed
+            }
         }
     }
 
@@ -60,6 +68,14 @@ public class SceneTransition : MonoBehaviour
         if (doorSound != null)
         {
             AudioManager.Instance.PlaySound(doorSound);
+        }
+    }
+
+    void PlayLockSound()
+    {
+        if (lockSound != null)
+        {
+            AudioManager.Instance.PlaySound(lockSound);
         }
     }
 }
