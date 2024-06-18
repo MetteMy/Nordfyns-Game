@@ -66888,7 +66888,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4524254058257901818, guid: 8cd8307c850db4dab9a0e4633e7d1e34, type: 3}
       propertyPath: health
-      value: 100
+      value: 200
       objectReference: {fileID: 0}
     - target: {fileID: 4524254058257901818, guid: 8cd8307c850db4dab9a0e4633e7d1e34, type: 3}
       propertyPath: healthBar
@@ -67048,6 +67048,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 5629456179202239782, guid: 8cd8307c850db4dab9a0e4633e7d1e34, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1970343183}
+    - targetCorrespondingSourceObject: {fileID: 5629456179202239782, guid: 8cd8307c850db4dab9a0e4633e7d1e34, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1970343189}
   m_SourcePrefab: {fileID: 100100000, guid: 8cd8307c850db4dab9a0e4633e7d1e34, type: 3}
 --- !u!1 &1403707792 stripped
 GameObject:
@@ -68830,6 +68833,20 @@ MonoBehaviour:
   - {fileID: 1655206393}
   - {fileID: 273313850}
   - {fileID: 1367103136}
+--- !u!114 &1970343189
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1970343169}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 85e523699d0c8574f8a1d4d12a09f907, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  shakeDuration: 0.2
+  shakeMagnitude: 0.1
 --- !u!1 &1977196851
 GameObject:
   m_ObjectHideFlags: 0
