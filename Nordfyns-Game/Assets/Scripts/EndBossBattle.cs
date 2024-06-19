@@ -83,7 +83,7 @@ public class EndBossBattle : MonoBehaviour
 
     private IEnumerator HandleEndBattle()
     {
-        yield return StartCoroutine(FadeIn());
+        yield return StartCoroutine(FadeIn(false));
 
         finishSquare.SetActive(false);
         AudioManager.Instance.PlayBackgroundMusic();
@@ -94,7 +94,7 @@ public class EndBossBattle : MonoBehaviour
 
     private IEnumerator HandlePlayerDeath()
     {
-        yield return StartCoroutine(FadeIn());
+        yield return StartCoroutine(FadeIn(true));
 
         finishSquare.SetActive(false);
         AudioManager.Instance.PlayBackgroundMusic();
@@ -107,9 +107,15 @@ public class EndBossBattle : MonoBehaviour
         gameObject.SetActive(false);
     }
 
-    private IEnumerator FadeIn()
+    private IEnumerator FadeIn(bool isDead)
     {
         Color color = uiImage.color;
+        if (isDead == true){
+            color = new Color(255,0,0,0);
+        }
+        else {
+            color = new Color(255,255,255,0);
+        }
         float currentTime = 0f;
 
         // Initial opacity
