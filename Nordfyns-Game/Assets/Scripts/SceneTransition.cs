@@ -21,7 +21,7 @@ public class SceneTransition : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.E))
         {
-            if (canTransition)
+            if (canTransition && GameManager.Instance.bossesDefeated >= requiredBossesDefeated)
             {
                 GameManager.Instance.lastDoorID = doorID;
                 Debug.Log("Setting lastDoorID to: " + doorID);
@@ -29,11 +29,16 @@ public class SceneTransition : MonoBehaviour
                 canTransition = false;
                 PlayDoorSound();
             }
-            else
-            {
-                PlayLockSound(); // Play the lock sound if transition is not allowed
-            }
+          
         }
+
+
+       
+            if (Input.GetKeyDown(KeyCode.E) && canTransition == true && GameManager.Instance.bossesDefeated <= requiredBossesDefeated)
+            {
+                PlayLockSound();
+            }
+       
     }
 
     private void OnTriggerEnter2D(Collider2D other)
@@ -43,15 +48,10 @@ public class SceneTransition : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             // Check if the required number of bosses have been defeated
-            if (GameManager.Instance.bossesDefeated >= requiredBossesDefeated)
-            {
+           
                 canTransition = true;
-            }
-            else
-            {
-                canTransition = false;
-                Debug.Log("Not enough bosses defeated to transition.");
-            }
+            
+            
         }
     }
 

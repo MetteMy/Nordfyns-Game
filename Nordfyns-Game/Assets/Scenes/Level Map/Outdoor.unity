@@ -2158,6 +2158,34 @@ PrefabInstance:
       propertyPath: backgroundMusicClip
       value: 
       objectReference: {fileID: 8300000, guid: 61f167439438b4b2887738f360763238, type: 3}
+    - target: {fileID: 1517671498620352141, guid: c81db97f20a094df1ba86af97044b6af, type: 3}
+      propertyPath: footstepSounds.Array.size
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1517671498620352141, guid: c81db97f20a094df1ba86af97044b6af, type: 3}
+      propertyPath: footstepSounds.Array.data[0]
+      value: 
+      objectReference: {fileID: 8300000, guid: d9c5e91cac7124706b49c8fe8970fcd3, type: 3}
+    - target: {fileID: 1517671498620352141, guid: c81db97f20a094df1ba86af97044b6af, type: 3}
+      propertyPath: footstepSounds.Array.data[1]
+      value: 
+      objectReference: {fileID: 8300000, guid: 5a05da6c8653842c8b095aa46f372976, type: 3}
+    - target: {fileID: 1517671498620352141, guid: c81db97f20a094df1ba86af97044b6af, type: 3}
+      propertyPath: footstepSounds.Array.data[2]
+      value: 
+      objectReference: {fileID: 8300000, guid: 440c08445e77e4bed84f07244d3a9038, type: 3}
+    - target: {fileID: 1517671498620352141, guid: c81db97f20a094df1ba86af97044b6af, type: 3}
+      propertyPath: footstepSounds.Array.data[3]
+      value: 
+      objectReference: {fileID: 8300000, guid: 9e61cff632d8e4298ae021a8c25ac1e4, type: 3}
+    - target: {fileID: 1517671498620352141, guid: c81db97f20a094df1ba86af97044b6af, type: 3}
+      propertyPath: footstepSounds.Array.data[4]
+      value: 
+      objectReference: {fileID: 8300000, guid: dab67e0fe4fe64b2fa7ce927da1bf0a4, type: 3}
+    - target: {fileID: 1517671498620352141, guid: c81db97f20a094df1ba86af97044b6af, type: 3}
+      propertyPath: footstepSounds.Array.data[5]
+      value: 
+      objectReference: {fileID: 8300000, guid: 9be708fa7af3b48a09b5e50eb374f137, type: 3}
     - target: {fileID: 3670341348256607777, guid: c81db97f20a094df1ba86af97044b6af, type: 3}
       propertyPath: Loop
       value: 1
