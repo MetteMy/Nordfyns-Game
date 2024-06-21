@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 7619831375701110406}
   - component: {fileID: 1288957708452511165}
   - component: {fileID: 2784697230830575816}
+  - component: {fileID: 7941742052419756988}
   m_Layer: 0
   m_Name: AstridShield
   m_TagString: Shield
@@ -66,9 +67,9 @@ CircleCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.0014657974, y: 0}
+  m_Offset: {x: -0.0014657974, y: -0.0019001961}
   serializedVersion: 2
-  m_Radius: 0.073039055
+  m_Radius: 0.23202062
 --- !u!114 &2784697230830575816
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -81,6 +82,41 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2704e3ee4b9d842f58e5b2cae98243e3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!58 &7941742052419756988
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2235589039765628674}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.0015964508, y: 0}
+  serializedVersion: 2
+  m_Radius: 0.23022461
 --- !u!1 &6915120244400101215
 GameObject:
   m_ObjectHideFlags: 0
