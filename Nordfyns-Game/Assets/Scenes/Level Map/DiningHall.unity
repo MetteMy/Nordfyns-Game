@@ -176,7 +176,7 @@ MonoBehaviour:
   bulletLife: 10
   speed: 10
   spawnerType: 1
-  firingRate: 1
+  firingRate: 0.5
   bulletsInWave: 5
   angleSpread: 45
   fireDirection: {x: 1, y: 0}
