@@ -7214,13 +7214,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 977157086}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: -0.7071068, w: 0.7071068}
   m_LocalPosition: {x: 0, y: 0, z: 0.12182208}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1223476012}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -90}
 --- !u!212 &977157088
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -7262,7 +7262,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
+  m_Sprite: {fileID: 861162785, guid: f388c4408c1a364468c6383c3cd8c863, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -7405,7 +7405,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2876560199119483969, guid: 7039477709fdb44138c0c6c09b63192f, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2.5
+      value: 0.37
       objectReference: {fileID: 0}
     - target: {fileID: 2876560199119483969, guid: 7039477709fdb44138c0c6c09b63192f, type: 3}
       propertyPath: m_LocalPosition.z
@@ -7476,7 +7476,7 @@ MonoBehaviour:
   sceneToLoad: Outdoor
   doorID: Krea
   doorSound: {fileID: 8300000, guid: 1f77b13f912af4cf997fffddf7a051df, type: 3}
-  lockSound: {fileID: 8300000, guid: f5b6c98a7768d43ff91213fbb04e2a9b, type: 3}
+  lockSound: {fileID: 8300000, guid: 37ff8747185e242afa55721c312a3f51, type: 3}
   requiredBossesDefeated: 0
 --- !u!4 &1223476012 stripped
 Transform:

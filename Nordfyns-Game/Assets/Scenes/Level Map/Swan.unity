@@ -9668,7 +9668,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 7482667652216324306, guid: 75f5f34dc1b5347e0b8351032682f224, type: 3}
+  m_Sprite: {fileID: 861162785, guid: f388c4408c1a364468c6383c3cd8c863, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -47252,7 +47252,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2876560199119483969, guid: 7039477709fdb44138c0c6c09b63192f, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -7.79
+      value: -8.3
       objectReference: {fileID: 0}
     - target: {fileID: 2876560199119483969, guid: 7039477709fdb44138c0c6c09b63192f, type: 3}
       propertyPath: m_LocalPosition.z
@@ -47290,6 +47290,14 @@ PrefabInstance:
       propertyPath: doorID
       value: Swan
       objectReference: {fileID: 0}
+    - target: {fileID: 3568964030241520688, guid: 7039477709fdb44138c0c6c09b63192f, type: 3}
+      propertyPath: doorSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 1f77b13f912af4cf997fffddf7a051df, type: 3}
+    - target: {fileID: 3568964030241520688, guid: 7039477709fdb44138c0c6c09b63192f, type: 3}
+      propertyPath: lockSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 37ff8747185e242afa55721c312a3f51, type: 3}
     - target: {fileID: 3568964030241520688, guid: 7039477709fdb44138c0c6c09b63192f, type: 3}
       propertyPath: m_Enabled
       value: 0
@@ -47340,8 +47348,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sceneToLoad: Outdoor
   doorID: Swan
-  doorSound: {fileID: 0}
-  lockSound: {fileID: 0}
+  doorSound: {fileID: 8300000, guid: 1f77b13f912af4cf997fffddf7a051df, type: 3}
+  lockSound: {fileID: 8300000, guid: 37ff8747185e242afa55721c312a3f51, type: 3}
   requiredBossesDefeated: 0
 --- !u!4 &1709459227 stripped
 Transform:

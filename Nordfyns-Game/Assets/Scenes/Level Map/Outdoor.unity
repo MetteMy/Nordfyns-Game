@@ -236,7 +236,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sceneToLoad: Keramik
   doorID: Keramik
-  doorSound: {fileID: 0}
+  doorSound: {fileID: 8300000, guid: 1f77b13f912af4cf997fffddf7a051df, type: 3}
   lockSound: {fileID: 8300000, guid: 37ff8747185e242afa55721c312a3f51, type: 3}
   requiredBossesDefeated: 3
 --- !u!4 &15314797 stripped
@@ -2740,6 +2740,10 @@ PrefabInstance:
       propertyPath: doorID
       value: DiningHall
       objectReference: {fileID: 0}
+    - target: {fileID: 3568964030241520688, guid: 7039477709fdb44138c0c6c09b63192f, type: 3}
+      propertyPath: doorSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 1f77b13f912af4cf997fffddf7a051df, type: 3}
     - target: {fileID: 3568964030241520688, guid: 7039477709fdb44138c0c6c09b63192f, type: 3}
       propertyPath: lockSound
       value: 
@@ -14569,7 +14573,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sceneToLoad: Music
   doorID: Music
-  doorSound: {fileID: 0}
+  doorSound: {fileID: 8300000, guid: 1f77b13f912af4cf997fffddf7a051df, type: 3}
   lockSound: {fileID: 8300000, guid: 37ff8747185e242afa55721c312a3f51, type: 3}
   requiredBossesDefeated: 5
 --- !u!1 &1239988424
@@ -41625,7 +41629,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sceneToLoad: Krea
   doorID: Krea
-  doorSound: {fileID: 0}
+  doorSound: {fileID: 8300000, guid: 1f77b13f912af4cf997fffddf7a051df, type: 3}
   lockSound: {fileID: 8300000, guid: 37ff8747185e242afa55721c312a3f51, type: 3}
   requiredBossesDefeated: 2
 --- !u!1001 &1606395659
@@ -42635,7 +42639,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sceneToLoad: Garden
   doorID: Garden
-  doorSound: {fileID: 0}
+  doorSound: {fileID: 8300000, guid: 1f77b13f912af4cf997fffddf7a051df, type: 3}
   lockSound: {fileID: 8300000, guid: 37ff8747185e242afa55721c312a3f51, type: 3}
   requiredBossesDefeated: 4
 --- !u!1001 &2396838889496871978
@@ -42714,6 +42718,10 @@ PrefabInstance:
       propertyPath: doorID
       value: Swan
       objectReference: {fileID: 0}
+    - target: {fileID: 3568964030241520688, guid: 7039477709fdb44138c0c6c09b63192f, type: 3}
+      propertyPath: doorSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 1f77b13f912af4cf997fffddf7a051df, type: 3}
     - target: {fileID: 3568964030241520688, guid: 7039477709fdb44138c0c6c09b63192f, type: 3}
       propertyPath: lockSound
       value: 
