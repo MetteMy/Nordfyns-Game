@@ -8,6 +8,8 @@ public class bulletScript : MonoBehaviour
     private Vector3 mousePos;
     private Rigidbody2D rb;
     public float force;
+    public float bulletLife = 1f; 
+    private float timer = 0f;
     
     // Start is called before the first frame update
     void Start()
@@ -37,10 +39,12 @@ public class bulletScript : MonoBehaviour
     }}
 
     // Update is called once per frame
-    // void Update()
-    // {
-        
-    // }
+     void Update()
+     {
+        if (gameObject.name == "Bullet(Clone)"){
+        if (timer > bulletLife) Destroy(this.gameObject);
+            timer += Time.deltaTime;    
+     } }
 
     
 }

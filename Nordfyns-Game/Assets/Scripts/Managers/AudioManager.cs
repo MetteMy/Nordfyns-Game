@@ -101,4 +101,12 @@ public class AudioManager : MonoBehaviour
         if (musicSource.clip != null){
             musicSource.Play();
     }}
+
+
+    public void PlayMusic(AudioClip Music){
+        musicSource.clip = Music;
+        if (musicSource.clip != null){
+            musicSource.Play();
+    }
+    }
 }

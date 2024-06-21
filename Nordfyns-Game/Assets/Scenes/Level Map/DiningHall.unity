@@ -176,7 +176,7 @@ MonoBehaviour:
   bulletLife: 10
   speed: 10
   spawnerType: 1
-  firingRate: 1
+  firingRate: 0.5
   bulletsInWave: 5
   angleSpread: 45
   fireDirection: {x: 1, y: 0}
@@ -38538,6 +38538,10 @@ PrefabInstance:
       propertyPath: m_LocalPosition.x
       value: -62.4
       objectReference: {fileID: 0}
+    - target: {fileID: 6037308680321163039, guid: d82c3cba098136948a85f4f86dbc8b57, type: 3}
+      propertyPath: bulletLife
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 8809239797873131041, guid: d82c3cba098136948a85f4f86dbc8b57, type: 3}
       propertyPath: m_Name
       value: Bullet
@@ -69956,7 +69960,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3506341031094975000, guid: 5708b28029c4144af9300ee78d55dcc5, type: 3}
       propertyPath: bossesDefeated
-      value: 6
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
