@@ -66831,7 +66831,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   prefab: {fileID: 291244359}
   bulletTransform: {fileID: 1970343177}
-  damage: 3
 --- !u!212 &1193554715
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -69933,7 +69932,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3506341031094975000, guid: 5708b28029c4144af9300ee78d55dcc5, type: 3}
       propertyPath: playerHealth
-      value: 15
+      value: 20
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

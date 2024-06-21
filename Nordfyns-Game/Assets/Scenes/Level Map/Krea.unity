@@ -79920,21 +79920,21 @@ Tilemap:
   m_GameObject: {fileID: 1769796609}
   m_Enabled: 1
   m_Tiles:
-  - first: {x: -10, y: -1, z: 0}
+  - first: {x: -9, y: 4, z: 0}
     second:
       serializedVersion: 2
-      m_TileIndex: 2
-      m_TileSpriteIndex: 2
+      m_TileIndex: 3
+      m_TileSpriteIndex: 3
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
       dummyAlignment: 0
       m_AllTileFlags: 1073741825
-  - first: {x: 5, y: -1, z: 0}
+  - first: {x: 4, y: 4, z: 0}
     second:
       serializedVersion: 2
-      m_TileIndex: 2
-      m_TileSpriteIndex: 2
+      m_TileIndex: 3
+      m_TileSpriteIndex: 3
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -80015,16 +80015,20 @@ Tilemap:
   - m_RefCount: 5
     m_Data: {fileID: 11400000, guid: bfd36e7da14a14c4dbbe4d58cad6fd1a, type: 2}
   - m_RefCount: 2
-    m_Data: {fileID: 11400000, guid: a053fa0f7d2f4f94694a8daa541a9e99, type: 2}
+    m_Data: {fileID: 11400000, guid: a93abc4db6da58949b922ed0dd3be9c8, type: 2}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
   - m_RefCount: 2
-    m_Data: {fileID: 11400000, guid: fc72fef75e6c01846ae1d5c5cefd7fa6, type: 2}
+    m_Data: {fileID: 11400000, guid: 5e1baf43b7b75084a8e9477e7557b7b9, type: 2}
   m_TileSpriteArray:
   - m_RefCount: 5
     m_Data: {fileID: -885483512, guid: c5a17bcaf18d85c4ca14bbddfdb1b383, type: 3}
   - m_RefCount: 2
-    m_Data: {fileID: -1599153433, guid: 400256d08a34a30428bcd9db5614bfbd, type: 3}
+    m_Data: {fileID: -57214842, guid: 6f1187b36bb0c4244a0ad120dbef586a, type: 3}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
   - m_RefCount: 2
-    m_Data: {fileID: -1025937849, guid: 48e01f26be77ae04e99743f9502cdb2e, type: 3}
+    m_Data: {fileID: -1385110864, guid: 7fe123ec80689244fb701acea1880a25, type: 3}
   m_TileMatrixArray:
   - m_RefCount: 9
     m_Data:
@@ -80210,8 +80214,12 @@ PrefabInstance:
       value: GameManager
       objectReference: {fileID: 0}
     - target: {fileID: 3506341031094975000, guid: 5708b28029c4144af9300ee78d55dcc5, type: 3}
+      propertyPath: playerDamage
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3506341031094975000, guid: 5708b28029c4144af9300ee78d55dcc5, type: 3}
       propertyPath: playerHealth
-      value: 10
+      value: 20
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
