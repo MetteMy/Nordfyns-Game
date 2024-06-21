@@ -966,6 +966,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 1517671498620352141, guid: c81db97f20a094df1ba86af97044b6af, type: 3}
+      propertyPath: BossMusic
+      value: 
+      objectReference: {fileID: 8300000, guid: 8a9ccd132f1ab33499f5d3920146243f, type: 3}
+    - target: {fileID: 1517671498620352141, guid: c81db97f20a094df1ba86af97044b6af, type: 3}
       propertyPath: backgroundMusicClip
       value: 
       objectReference: {fileID: 8300000, guid: 2f6da7fcfcaea71408e20aed923dbbe0, type: 3}
@@ -36796,9 +36800,9 @@ MonoBehaviour:
   sentences:
   - The school used to be lively, fun, and welcoming.
   - But now, something is wrong, and the atmosphere feels different.
-  - The steudents are staying in their rooms and i havent seen a single teacher today.
+  - The students are staying in their rooms and i havent seen a single teacher today.
   - I miss the usual ways of the school.
-  - What is going on? I maktes me really sad...
+  - What is going on? I makes me really sad...
   - This school is something special to me.
   - It is such a wonderful place, and I DON't want it to be like this.
   - To be honest... i also feel gloomy.

@@ -33526,7 +33526,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 8112561148161033723, guid: 396bfff2f926b4b69a043642893cda28, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 724233086}
   m_SourcePrefab: {fileID: 100100000, guid: 396bfff2f926b4b69a043642893cda28, type: 3}
 --- !u!1 &724233083 stripped
 GameObject:
@@ -33544,6 +33547,30 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &724233085 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8112561148161033723, guid: 396bfff2f926b4b69a043642893cda28, type: 3}
+  m_PrefabInstance: {fileID: 724233082}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &724233086
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 724233085}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2592bae51a81f4e57819f7d0371a5a78, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerTag: Player
+  enemyTag: enemy
+  minZoom: 5
+  maxZoom: 10
+  zoomLimiter: 10
+  m_DampTime: 5
+  m_ScreenEdgeBuffer: 4
 --- !u!1 &726831027
 GameObject:
   m_ObjectHideFlags: 0

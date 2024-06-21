@@ -2,12 +2,15 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class MainMenuButton : MonoBehaviour
 {
     public int chapterSelected;
     public GameObject startMenu;
     public GameObject optionsMenu;
+    public GameObject controlsMenu;
+   
 
     // This method is called when the "Play Game" button is pressed
     public void PlayGame()
@@ -19,7 +22,7 @@ public class MainMenuButton : MonoBehaviour
     public void ChapterSelect()
     {
         GameManager.Instance.bossesDefeated = chapterSelected;
-        PlayGame();
+        ControlsMenu();
     }
 
     // This method is called when the chapter selection menu should be shown
@@ -33,6 +36,13 @@ public class MainMenuButton : MonoBehaviour
     {
         startMenu.SetActive(true);
         optionsMenu.SetActive(false);
+    }
+
+   public void ControlsMenu()
+    {
+        startMenu.SetActive(false);
+        optionsMenu.SetActive(false);
+        controlsMenu.SetActive(true);
     }
        
 }
