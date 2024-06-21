@@ -7241,13 +7241,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 977157086}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: -0.7071068, w: 0.7071068}
   m_LocalPosition: {x: 0, y: 0, z: 0.12182208}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1223476012}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -90}
 --- !u!212 &977157088
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -7289,7 +7289,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
+  m_Sprite: {fileID: 861162785, guid: f388c4408c1a364468c6383c3cd8c863, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -7432,7 +7432,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2876560199119483969, guid: 7039477709fdb44138c0c6c09b63192f, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 2.5
+      value: 0.37
       objectReference: {fileID: 0}
     - target: {fileID: 2876560199119483969, guid: 7039477709fdb44138c0c6c09b63192f, type: 3}
       propertyPath: m_LocalPosition.z
@@ -7506,7 +7506,7 @@ MonoBehaviour:
   sceneToLoad: Outdoor
   doorID: Krea
   doorSound: {fileID: 8300000, guid: 1f77b13f912af4cf997fffddf7a051df, type: 3}
-  lockSound: {fileID: 8300000, guid: f5b6c98a7768d43ff91213fbb04e2a9b, type: 3}
+  lockSound: {fileID: 8300000, guid: 37ff8747185e242afa55721c312a3f51, type: 3}
   requiredBossesDefeated: 0
 --- !u!4 &1223476012 stripped
 Transform:
@@ -79963,21 +79963,21 @@ Tilemap:
   m_GameObject: {fileID: 1769796609}
   m_Enabled: 1
   m_Tiles:
-  - first: {x: -10, y: -1, z: 0}
+  - first: {x: -9, y: 4, z: 0}
     second:
       serializedVersion: 2
-      m_TileIndex: 2
-      m_TileSpriteIndex: 2
+      m_TileIndex: 3
+      m_TileSpriteIndex: 3
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
       dummyAlignment: 0
       m_AllTileFlags: 1073741825
-  - first: {x: 5, y: -1, z: 0}
+  - first: {x: 4, y: 4, z: 0}
     second:
       serializedVersion: 2
-      m_TileIndex: 2
-      m_TileSpriteIndex: 2
+      m_TileIndex: 3
+      m_TileSpriteIndex: 3
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -80058,16 +80058,20 @@ Tilemap:
   - m_RefCount: 5
     m_Data: {fileID: 11400000, guid: bfd36e7da14a14c4dbbe4d58cad6fd1a, type: 2}
   - m_RefCount: 2
-    m_Data: {fileID: 11400000, guid: a053fa0f7d2f4f94694a8daa541a9e99, type: 2}
+    m_Data: {fileID: 11400000, guid: a93abc4db6da58949b922ed0dd3be9c8, type: 2}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
   - m_RefCount: 2
-    m_Data: {fileID: 11400000, guid: fc72fef75e6c01846ae1d5c5cefd7fa6, type: 2}
+    m_Data: {fileID: 11400000, guid: 5e1baf43b7b75084a8e9477e7557b7b9, type: 2}
   m_TileSpriteArray:
   - m_RefCount: 5
     m_Data: {fileID: -885483512, guid: c5a17bcaf18d85c4ca14bbddfdb1b383, type: 3}
   - m_RefCount: 2
-    m_Data: {fileID: -1599153433, guid: 400256d08a34a30428bcd9db5614bfbd, type: 3}
+    m_Data: {fileID: -57214842, guid: 6f1187b36bb0c4244a0ad120dbef586a, type: 3}
+  - m_RefCount: 0
+    m_Data: {fileID: 0}
   - m_RefCount: 2
-    m_Data: {fileID: -1025937849, guid: 48e01f26be77ae04e99743f9502cdb2e, type: 3}
+    m_Data: {fileID: -1385110864, guid: 7fe123ec80689244fb701acea1880a25, type: 3}
   m_TileMatrixArray:
   - m_RefCount: 9
     m_Data:
@@ -80253,8 +80257,12 @@ PrefabInstance:
       value: GameManager
       objectReference: {fileID: 0}
     - target: {fileID: 3506341031094975000, guid: 5708b28029c4144af9300ee78d55dcc5, type: 3}
+      propertyPath: playerDamage
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3506341031094975000, guid: 5708b28029c4144af9300ee78d55dcc5, type: 3}
       propertyPath: playerHealth
-      value: 10
+      value: 20
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

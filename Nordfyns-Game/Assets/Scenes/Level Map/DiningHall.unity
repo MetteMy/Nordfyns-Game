@@ -1826,6 +1826,10 @@ PrefabInstance:
       propertyPath: spawnLocation
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 6857522594936086622, guid: 396bfff2f926b4b69a043642893cda28, type: 3}
+      propertyPath: interactionSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 4d8104a496eca4ca1bc0d2dc55942079, type: 3}
     - target: {fileID: 7768083239127423700, guid: 396bfff2f926b4b69a043642893cda28, type: 3}
       propertyPath: m_IsActive
       value: 0
@@ -37065,11 +37069,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2876560199119483969, guid: 7039477709fdb44138c0c6c09b63192f, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -13.00338
+      value: -13.15
       objectReference: {fileID: 0}
     - target: {fileID: 2876560199119483969, guid: 7039477709fdb44138c0c6c09b63192f, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 10.84
+      value: 10.09
       objectReference: {fileID: 0}
     - target: {fileID: 2876560199119483969, guid: 7039477709fdb44138c0c6c09b63192f, type: 3}
       propertyPath: m_LocalPosition.z
@@ -37111,6 +37115,14 @@ PrefabInstance:
       propertyPath: doorID
       value: DiningHall
       objectReference: {fileID: 0}
+    - target: {fileID: 3568964030241520688, guid: 7039477709fdb44138c0c6c09b63192f, type: 3}
+      propertyPath: doorSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 1f77b13f912af4cf997fffddf7a051df, type: 3}
+    - target: {fileID: 3568964030241520688, guid: 7039477709fdb44138c0c6c09b63192f, type: 3}
+      propertyPath: lockSound
+      value: 
+      objectReference: {fileID: 8300000, guid: 37ff8747185e242afa55721c312a3f51, type: 3}
     - target: {fileID: 3568964030241520688, guid: 7039477709fdb44138c0c6c09b63192f, type: 3}
       propertyPath: sceneToLoad
       value: Outdoor
@@ -66835,7 +66847,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   prefab: {fileID: 291244359}
   bulletTransform: {fileID: 1970343177}
-  damage: 3
 --- !u!212 &1193554715
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -67001,9 +67012,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bullet: {fileID: 8905589314700336316, guid: ad76961a2252d324197c61e070202d07, type: 3}
   bulletLife: 4
-  speed: 10
+  speed: 20
   spawnerType: 0
-  firingRate: 10
+  firingRate: 4
   bulletsInWave: 5
   angleSpread: 45
   fireDirection: {x: 1, y: 0}
@@ -67839,13 +67850,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1492807968}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: -0.7071068, w: 0.7071068}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_LocalScale: {x: 2, y: 2, z: 2}
+  m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 618036229}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -90}
 --- !u!212 &1492807970
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -67887,7 +67898,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 7482667652216324306, guid: 75f5f34dc1b5347e0b8351032682f224, type: 3}
+  m_Sprite: {fileID: 861162785, guid: f388c4408c1a364468c6383c3cd8c863, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -69106,6 +69117,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2073570762551490843, guid: b4e01b94ee164486c8947943f9d0a619, type: 3}
+      propertyPath: evilBoss
+      value: 
+      objectReference: {fileID: 1970343169}
+    - target: {fileID: 2073570762551490843, guid: b4e01b94ee164486c8947943f9d0a619, type: 3}
       propertyPath: prefabs.Array.size
       value: 7
       objectReference: {fileID: 0}
@@ -69200,7 +69215,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7339367255521550147, guid: 260ef63c97df146709d61a4d33e0f1a0, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 9.96
+      value: 12.46
       objectReference: {fileID: 0}
     - target: {fileID: 7339367255521550147, guid: 260ef63c97df146709d61a4d33e0f1a0, type: 3}
       propertyPath: m_LocalPosition.y
@@ -69825,7 +69840,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7339367255521550147, guid: 260ef63c97df146709d61a4d33e0f1a0, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 9.99
+      value: 13.03
       objectReference: {fileID: 0}
     - target: {fileID: 7339367255521550147, guid: 260ef63c97df146709d61a4d33e0f1a0, type: 3}
       propertyPath: m_LocalPosition.y
@@ -69932,8 +69947,16 @@ PrefabInstance:
       value: GameManager
       objectReference: {fileID: 0}
     - target: {fileID: 3506341031094975000, guid: 5708b28029c4144af9300ee78d55dcc5, type: 3}
+      propertyPath: playerDamage
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3506341031094975000, guid: 5708b28029c4144af9300ee78d55dcc5, type: 3}
       propertyPath: playerHealth
-      value: 50
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 3506341031094975000, guid: 5708b28029c4144af9300ee78d55dcc5, type: 3}
+      propertyPath: bossesDefeated
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
