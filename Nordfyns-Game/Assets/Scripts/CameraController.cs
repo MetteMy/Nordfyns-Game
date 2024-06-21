@@ -20,11 +20,12 @@ public class CameraController : MonoBehaviour
     void Start()
     {
         cam = GetComponent<Camera>();
-        FindPlayerAndEnemy();
+        
     }
 
-    void LateUpdate()
+    void Update()
     {
+        FindPlayerAndEnemy();
         if (playerTransform == null)
         {
             FindPlayerAndEnemy();
@@ -34,6 +35,7 @@ public class CameraController : MonoBehaviour
 
         MoveCamera();
         ZoomCamera();
+        
     }
 
     void FindPlayerAndEnemy()

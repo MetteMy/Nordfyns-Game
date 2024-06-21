@@ -33519,6 +33519,30 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 3564015056735096558, guid: 396bfff2f926b4b69a043642893cda28, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.5749999
+      objectReference: {fileID: 0}
+    - target: {fileID: 3564015056735096558, guid: 396bfff2f926b4b69a043642893cda28, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.05
+      objectReference: {fileID: 0}
+    - target: {fileID: 3564015056735096558, guid: 396bfff2f926b4b69a043642893cda28, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.2625
+      objectReference: {fileID: 0}
+    - target: {fileID: 3564015056735096558, guid: 396bfff2f926b4b69a043642893cda28, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 16.091
+      objectReference: {fileID: 0}
+    - target: {fileID: 3564015056735096558, guid: 396bfff2f926b4b69a043642893cda28, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -1.543
+      objectReference: {fileID: 0}
+    - target: {fileID: 3564015056735096558, guid: 396bfff2f926b4b69a043642893cda28, type: 3}
+      propertyPath: m_ConstrainProportionsScale
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6489249590177061485, guid: 396bfff2f926b4b69a043642893cda28, type: 3}
       propertyPath: healthBar
       value: 
@@ -33534,6 +33558,30 @@ PrefabInstance:
     - target: {fileID: 8026960696737219575, guid: 396bfff2f926b4b69a043642893cda28, type: 3}
       propertyPath: m_Name
       value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 8645203187641679931, guid: 396bfff2f926b4b69a043642893cda28, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 2.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8645203187641679931, guid: 396bfff2f926b4b69a043642893cda28, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.5749999
+      objectReference: {fileID: 0}
+    - target: {fileID: 8645203187641679931, guid: 396bfff2f926b4b69a043642893cda28, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.525
+      objectReference: {fileID: 0}
+    - target: {fileID: 8645203187641679931, guid: 396bfff2f926b4b69a043642893cda28, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0.024198532
+      objectReference: {fileID: 0}
+    - target: {fileID: 8645203187641679931, guid: 396bfff2f926b4b69a043642893cda28, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -1.39
+      objectReference: {fileID: 0}
+    - target: {fileID: 8645203187641679931, guid: 396bfff2f926b4b69a043642893cda28, type: 3}
+      propertyPath: m_ConstrainProportionsScale
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -33578,11 +33626,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerTag: Player
   enemyTag: enemy
-  minZoom: 5
+  minZoom: 7
   maxZoom: 10
   zoomLimiter: 10
-  m_DampTime: 5
-  m_ScreenEdgeBuffer: 4
+  m_DampTime: 0.2
+  m_ScreenEdgeBuffer: 1
 --- !u!1 &726831027
 GameObject:
   m_ObjectHideFlags: 0

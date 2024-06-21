@@ -92865,10 +92865,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerTag: Player
   enemyTag: enemy
-  minZoom: 5
+  minZoom: 7
   maxZoom: 10
   zoomLimiter: 10
-  m_DampTime: 5
+  m_DampTime: 0.2
   m_ScreenEdgeBuffer: 4
 --- !u!114 &1426792031 stripped
 MonoBehaviour:
@@ -93616,7 +93616,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1015451292405496290, guid: 396bfff2f926b4b69a043642893cda28, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -132.04
+      value: -132.03998
       objectReference: {fileID: 0}
     - target: {fileID: 3316211125964844764, guid: 396bfff2f926b4b69a043642893cda28, type: 3}
       propertyPath: prefab

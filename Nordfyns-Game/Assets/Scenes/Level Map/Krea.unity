@@ -322,11 +322,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerTag: Player
   enemyTag: enemy
-  minZoom: 5
+  minZoom: 7
   maxZoom: 10
   zoomLimiter: 10
-  m_DampTime: 4
-  m_ScreenEdgeBuffer: 4
+  m_DampTime: 0.2
+  m_ScreenEdgeBuffer: 1
 --- !u!1001 &304775085
 PrefabInstance:
   m_ObjectHideFlags: 0
