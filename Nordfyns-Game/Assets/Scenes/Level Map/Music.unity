@@ -22364,6 +22364,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 313419072100385882, guid: 8cd8307c850db4dab9a0e4633e7d1e34, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 1.6190007
+      objectReference: {fileID: 0}
     - target: {fileID: 938675786320466082, guid: 8cd8307c850db4dab9a0e4633e7d1e34, type: 3}
       propertyPath: m_Sprite
       value: 
@@ -22378,7 +22382,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2329315510390553357, guid: 8cd8307c850db4dab9a0e4633e7d1e34, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 12.01
+      value: 9.98
       objectReference: {fileID: 0}
     - target: {fileID: 2329315510390553357, guid: 8cd8307c850db4dab9a0e4633e7d1e34, type: 3}
       propertyPath: m_LocalPosition.z
@@ -22422,7 +22426,7 @@ PrefabInstance:
       objectReference: {fileID: 9100000, guid: bdfb125a4dc46154ea15e9d9e0ee49e2, type: 2}
     - target: {fileID: 3747113454713668329, guid: 8cd8307c850db4dab9a0e4633e7d1e34, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 1.44
+      value: 1.529
       objectReference: {fileID: 0}
     - target: {fileID: 4524254058257901818, guid: 8cd8307c850db4dab9a0e4633e7d1e34, type: 3}
       propertyPath: health
@@ -22498,7 +22502,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5629456179202239782, guid: 8cd8307c850db4dab9a0e4633e7d1e34, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6178868300864410985, guid: 8cd8307c850db4dab9a0e4633e7d1e34, type: 3}
       propertyPath: m_Camera
@@ -22522,7 +22526,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8442680037502399902, guid: 8cd8307c850db4dab9a0e4633e7d1e34, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0.47
+      value: 0.63
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 7175162916899025208, guid: 8cd8307c850db4dab9a0e4633e7d1e34, type: 3}
@@ -44416,7 +44420,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   prefab: {fileID: 1583469854}
   bulletTransform: {fileID: 964169382}
-  damage: 5
 --- !u!212 &1607713643
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -44478,7 +44481,7 @@ Transform:
   m_GameObject: {fileID: 1607713641}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.0607, y: -4.52, z: 0}
+  m_LocalPosition: {x: 0.0607, y: -2.5, z: 0}
   m_LocalScale: {x: 1.9376394, y: 8.962726, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
