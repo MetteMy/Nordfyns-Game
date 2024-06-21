@@ -8,6 +8,9 @@ public class EvilHøjskoleSpiritBossFight : StateMachineBehaviour
 
 
     private SpawnerManager spawnerManager;
+    private int index;  
+
+    public AudioClip[] bossMusic;
 
     private EnemyHealth enemyHealth;
     
@@ -28,6 +31,12 @@ public class EvilHøjskoleSpiritBossFight : StateMachineBehaviour
         teleportScript = animator.GetComponent<BossTeleportScript>();
 
         teleportScript.TeleportToNextState();
+
+        if (bossMusic.Length > 0)
+        {
+            AudioManager.Instance.PlayMusic(bossMusic[index]);
+        }  
+    
         // teleportScript = animator.GetComponentInChildren<BossTeleportScript>();
 
         // teleportScript.Teleport();

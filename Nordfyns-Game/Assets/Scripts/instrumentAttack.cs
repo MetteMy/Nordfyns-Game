@@ -22,7 +22,7 @@ public class instrumentAttack : MonoBehaviour
     void Update()
     {
       
-            if (canInteract == true &&  Input.GetKeyDown(KeyCode.E)){
+            if (canInteract == true &&  Input.GetMouseButtonDown(0)){
             Debug.Log("MUUUSIIIC!!!"); 
             // canInteract = false; 
             //GameObject shockwave = Instantiate(prefab, this.transform.position, Quaternion.identity);

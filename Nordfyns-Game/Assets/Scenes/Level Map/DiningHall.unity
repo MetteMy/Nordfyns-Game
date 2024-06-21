@@ -1808,7 +1808,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1015451292405496290, guid: 396bfff2f926b4b69a043642893cda28, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -132.03998
+      value: -132.03996
       objectReference: {fileID: 0}
     - target: {fileID: 3316211125964844764, guid: 396bfff2f926b4b69a043642893cda28, type: 3}
       propertyPath: prefab
@@ -69956,7 +69956,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3506341031094975000, guid: 5708b28029c4144af9300ee78d55dcc5, type: 3}
       propertyPath: bossesDefeated
-      value: 6
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
