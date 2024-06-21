@@ -10,7 +10,7 @@ public class instrumentAttack : MonoBehaviour
 
     private EnemyHealth enemyHealth;
 
-    public int damage; 
+    //public int damage; 
 
 
     void Start()
@@ -27,7 +27,7 @@ public class instrumentAttack : MonoBehaviour
             // canInteract = false; 
             //GameObject shockwave = Instantiate(prefab, this.transform.position, Quaternion.identity);
             enemyHealth = GetComponentInParent<EnemyHealth>();
-            enemyHealth.health -= damage;
+            enemyHealth.health -= 1; //damage;
            
         }
 

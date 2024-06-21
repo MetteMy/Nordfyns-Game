@@ -3,6 +3,7 @@ using UnityEngine;
 public class SceneInitializer : MonoBehaviour
 {
     public GameObject[] prefabs; // Array to hold prefabs to be activated based on bosses defeated
+    public GameObject evilBoss;
 
     void Start()
     {
@@ -21,10 +22,12 @@ public class SceneInitializer : MonoBehaviour
             if (i < bossesDefeated && prefabs[i] != null)
             {
                 prefabs[i].SetActive(true);
+                evilBoss.SetActive(false);
             }
             else if (prefabs[i] != null)
             {
                 prefabs[i].SetActive(false);
+                evilBoss.SetActive(true);
             }
         }
     }
