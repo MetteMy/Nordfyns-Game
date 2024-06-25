@@ -571,6 +571,10 @@ PrefabInstance:
       propertyPath: sentences.Array.data[0]
       value: "L\xE6rke is back!"
       objectReference: {fileID: 0}
+    - target: {fileID: 4419333663558860160, guid: f1969a83855394624b4a53b94359fe25, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 4088eb36fe8d049539629be1d9c0cce8, type: 3}
     - target: {fileID: 6851485097751385061, guid: f1969a83855394624b4a53b94359fe25, type: 3}
       propertyPath: m_LocalPosition.x
       value: 20.901215
@@ -6784,11 +6788,11 @@ PrefabInstance:
       objectReference: {fileID: 92737361}
     - target: {fileID: 4222971590905482277, guid: 8bfab911352a04e93b263ff2a4c2373f, type: 3}
       propertyPath: TriggersBossBattle
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4222971590905482277, guid: 8bfab911352a04e93b263ff2a4c2373f, type: 3}
       propertyPath: sentences.Array.size
-      value: 10
+      value: 11
       objectReference: {fileID: 0}
     - target: {fileID: 4222971590905482277, guid: 8bfab911352a04e93b263ff2a4c2373f, type: 3}
       propertyPath: sentences.Array.data[0]
@@ -6816,19 +6820,20 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4222971590905482277, guid: 8bfab911352a04e93b263ff2a4c2373f, type: 3}
       propertyPath: sentences.Array.data[6]
-      value: Perhaps you can check on Astrid in Ceramics Class.
+      value: I've been hearing weird noises abd mumbling coming from the Creative
+        Room.
       objectReference: {fileID: 0}
     - target: {fileID: 4222971590905482277, guid: 8bfab911352a04e93b263ff2a4c2373f, type: 3}
       propertyPath: sentences.Array.data[7]
-      value: She was acting very strange earlier.
+      value: Could you please go check it out? The students are getting concerned.
       objectReference: {fileID: 0}
     - target: {fileID: 4222971590905482277, guid: 8bfab911352a04e93b263ff2a4c2373f, type: 3}
       propertyPath: sentences.Array.data[8]
-      value: I hope she's okay!
+      value: Thank you so much. THank you for all you effort.
       objectReference: {fileID: 0}
     - target: {fileID: 4222971590905482277, guid: 8bfab911352a04e93b263ff2a4c2373f, type: 3}
       propertyPath: sentences.Array.data[9]
-      value: Good luck!
+      value: I appreciate it a lot.
       objectReference: {fileID: 0}
     - target: {fileID: 4222971590905482277, guid: 8bfab911352a04e93b263ff2a4c2373f, type: 3}
       propertyPath: sentences.Array.data[10]
@@ -7041,6 +7046,34 @@ PrefabInstance:
       propertyPath: BossMusic
       value: 
       objectReference: {fileID: 8300000, guid: c2ed0430474fe45499ff65ef70363110, type: 3}
+    - target: {fileID: 1517671498620352141, guid: c81db97f20a094df1ba86af97044b6af, type: 3}
+      propertyPath: footstepSounds.Array.size
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1517671498620352141, guid: c81db97f20a094df1ba86af97044b6af, type: 3}
+      propertyPath: footstepSounds.Array.data[0]
+      value: 
+      objectReference: {fileID: 8300000, guid: d9c5e91cac7124706b49c8fe8970fcd3, type: 3}
+    - target: {fileID: 1517671498620352141, guid: c81db97f20a094df1ba86af97044b6af, type: 3}
+      propertyPath: footstepSounds.Array.data[1]
+      value: 
+      objectReference: {fileID: 8300000, guid: 5a05da6c8653842c8b095aa46f372976, type: 3}
+    - target: {fileID: 1517671498620352141, guid: c81db97f20a094df1ba86af97044b6af, type: 3}
+      propertyPath: footstepSounds.Array.data[2]
+      value: 
+      objectReference: {fileID: 8300000, guid: 440c08445e77e4bed84f07244d3a9038, type: 3}
+    - target: {fileID: 1517671498620352141, guid: c81db97f20a094df1ba86af97044b6af, type: 3}
+      propertyPath: footstepSounds.Array.data[3]
+      value: 
+      objectReference: {fileID: 8300000, guid: 9e61cff632d8e4298ae021a8c25ac1e4, type: 3}
+    - target: {fileID: 1517671498620352141, guid: c81db97f20a094df1ba86af97044b6af, type: 3}
+      propertyPath: footstepSounds.Array.data[4]
+      value: 
+      objectReference: {fileID: 8300000, guid: dab67e0fe4fe64b2fa7ce927da1bf0a4, type: 3}
+    - target: {fileID: 1517671498620352141, guid: c81db97f20a094df1ba86af97044b6af, type: 3}
+      propertyPath: footstepSounds.Array.data[5]
+      value: 
+      objectReference: {fileID: 8300000, guid: 9be708fa7af3b48a09b5e50eb374f137, type: 3}
     - target: {fileID: 4222172468616931759, guid: c81db97f20a094df1ba86af97044b6af, type: 3}
       propertyPath: m_Name
       value: AudioManager
@@ -80178,6 +80211,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 508392216}
     m_Modifications:
+    - target: {fileID: 3253440828108314848, guid: 8bfab911352a04e93b263ff2a4c2373f, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 00a67403a2e0944b89a84d9c3f21ee46, type: 3}
     - target: {fileID: 3669763842500641775, guid: 8bfab911352a04e93b263ff2a4c2373f, type: 3}
       propertyPath: m_LocalPosition.x
       value: -12.75

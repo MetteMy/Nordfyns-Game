@@ -32,4 +32,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Level Map/View.unity
     guid: 5309f2ef790e048ed86dd21b2272bdb2
+  - enabled: 1
+    path: Assets/Scenes/Level Map/StartScreen.unity
+    guid: 86e81c409c5404f37b2f7c7704c147b1
+  - enabled: 1
+    path: Assets/Scenes/Level Map/EndCutScene.unity
+    guid: cd4641f951b964898b83a7c6c1dc4ee4
   m_configObjects: {}

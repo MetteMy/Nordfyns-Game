@@ -421,15 +421,16 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4222971590905482277, guid: 8bfab911352a04e93b263ff2a4c2373f, type: 3}
       propertyPath: sentences.Array.data[6]
-      value: I heard some loud noises coming from music earlier.
+      value: Hey, have you been hearing those noises from the the Music room lately?
       objectReference: {fileID: 0}
     - target: {fileID: 4222971590905482277, guid: 8bfab911352a04e93b263ff2a4c2373f, type: 3}
       propertyPath: sentences.Array.data[7]
-      value: Any idea what's happening?
+      value: Not harmonic music, but loud crunching noises, stomping, and occasional
+        yelling?
       objectReference: {fileID: 0}
     - target: {fileID: 4222971590905482277, guid: 8bfab911352a04e93b263ff2a4c2373f, type: 3}
       propertyPath: sentences.Array.data[8]
-      value: I hope Asmus is okay.
+      value: What in the world is going on there? I hope Asmus is okay.
       objectReference: {fileID: 0}
     - target: {fileID: 8150310705395274308, guid: 8bfab911352a04e93b263ff2a4c2373f, type: 3}
       propertyPath: m_Name
@@ -33212,6 +33213,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1517671498620352141, guid: c81db97f20a094df1ba86af97044b6af, type: 3}
+      propertyPath: BossMusic
+      value: 
+      objectReference: {fileID: 8300000, guid: 13729f5f53eab42448ffbc19b568181c, type: 3}
     - target: {fileID: 1517671498620352141, guid: c81db97f20a094df1ba86af97044b6af, type: 3}
       propertyPath: backgroundMusicClip
       value: 

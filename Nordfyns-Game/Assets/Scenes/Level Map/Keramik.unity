@@ -8680,6 +8680,34 @@ PrefabInstance:
       propertyPath: BossMusic
       value: 
       objectReference: {fileID: 8300000, guid: d3494eb1d6a9949a883645ca1d3ab7d1, type: 3}
+    - target: {fileID: 1517671498620352141, guid: c81db97f20a094df1ba86af97044b6af, type: 3}
+      propertyPath: footstepSounds.Array.size
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1517671498620352141, guid: c81db97f20a094df1ba86af97044b6af, type: 3}
+      propertyPath: footstepSounds.Array.data[0]
+      value: 
+      objectReference: {fileID: 8300000, guid: d9c5e91cac7124706b49c8fe8970fcd3, type: 3}
+    - target: {fileID: 1517671498620352141, guid: c81db97f20a094df1ba86af97044b6af, type: 3}
+      propertyPath: footstepSounds.Array.data[1]
+      value: 
+      objectReference: {fileID: 8300000, guid: 5a05da6c8653842c8b095aa46f372976, type: 3}
+    - target: {fileID: 1517671498620352141, guid: c81db97f20a094df1ba86af97044b6af, type: 3}
+      propertyPath: footstepSounds.Array.data[2]
+      value: 
+      objectReference: {fileID: 8300000, guid: 440c08445e77e4bed84f07244d3a9038, type: 3}
+    - target: {fileID: 1517671498620352141, guid: c81db97f20a094df1ba86af97044b6af, type: 3}
+      propertyPath: footstepSounds.Array.data[3]
+      value: 
+      objectReference: {fileID: 8300000, guid: 9e61cff632d8e4298ae021a8c25ac1e4, type: 3}
+    - target: {fileID: 1517671498620352141, guid: c81db97f20a094df1ba86af97044b6af, type: 3}
+      propertyPath: footstepSounds.Array.data[4]
+      value: 
+      objectReference: {fileID: 8300000, guid: dab67e0fe4fe64b2fa7ce927da1bf0a4, type: 3}
+    - target: {fileID: 1517671498620352141, guid: c81db97f20a094df1ba86af97044b6af, type: 3}
+      propertyPath: footstepSounds.Array.data[5]
+      value: 
+      objectReference: {fileID: 8300000, guid: 9be708fa7af3b48a09b5e50eb374f137, type: 3}
     - target: {fileID: 4222172468616931759, guid: c81db97f20a094df1ba86af97044b6af, type: 3}
       propertyPath: m_Name
       value: AudioManager
@@ -8854,7 +8882,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6543930710962093725, guid: d9299efff57da4dd0a0e643d8cbe0965, type: 3}
       propertyPath: sentences.Array.size
-      value: 13
+      value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 6543930710962093725, guid: d9299efff57da4dd0a0e643d8cbe0965, type: 3}
       propertyPath: sentences.Array.data[0]
@@ -8878,31 +8906,31 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6543930710962093725, guid: d9299efff57da4dd0a0e643d8cbe0965, type: 3}
       propertyPath: sentences.Array.data[5]
-      value: Oh...
+      value: Hey, can you do me a favor?
       objectReference: {fileID: 0}
     - target: {fileID: 6543930710962093725, guid: d9299efff57da4dd0a0e643d8cbe0965, type: 3}
       propertyPath: sentences.Array.data[6]
-      value: Oh no...
+      value: The garden has been looking sad lately.
       objectReference: {fileID: 0}
     - target: {fileID: 6543930710962093725, guid: d9299efff57da4dd0a0e643d8cbe0965, type: 3}
       propertyPath: sentences.Array.data[7]
-      value: Whatever happened to me...
+      value: Can you go check it out?
       objectReference: {fileID: 0}
     - target: {fileID: 6543930710962093725, guid: d9299efff57da4dd0a0e643d8cbe0965, type: 3}
       propertyPath: sentences.Array.data[8]
-      value: I think has also happened to Mattias.
+      value: Again, thank you!
       objectReference: {fileID: 0}
     - target: {fileID: 6543930710962093725, guid: d9299efff57da4dd0a0e643d8cbe0965, type: 3}
       propertyPath: sentences.Array.data[9]
-      value: He was rambling about getting into stocks and the monarchy earlier.
+      value: Again, thank you!
       objectReference: {fileID: 0}
     - target: {fileID: 6543930710962093725, guid: d9299efff57da4dd0a0e643d8cbe0965, type: 3}
       propertyPath: sentences.Array.data[10]
-      value: Something's way off.
+      value: Again, thank you!
       objectReference: {fileID: 0}
     - target: {fileID: 6543930710962093725, guid: d9299efff57da4dd0a0e643d8cbe0965, type: 3}
       propertyPath: sentences.Array.data[11]
-      value: Can you go check it out?
+      value: Again, thank you!
       objectReference: {fileID: 0}
     - target: {fileID: 6543930710962093725, guid: d9299efff57da4dd0a0e643d8cbe0965, type: 3}
       propertyPath: sentences.Array.data[12]

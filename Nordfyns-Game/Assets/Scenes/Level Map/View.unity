@@ -741,7 +741,7 @@ PrefabInstance:
     - target: {fileID: 938675786320466082, guid: 8cd8307c850db4dab9a0e4633e7d1e34, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: 3b547e33f10041f45b081dcc06e80311, type: 3}
+      objectReference: {fileID: 21300000, guid: 142f26df6d9fa4f7fa3a375d055f8beb, type: 3}
     - target: {fileID: 2210133457953936550, guid: 8cd8307c850db4dab9a0e4633e7d1e34, type: 3}
       propertyPath: m_Name
       value: RasmusSpawnPoint
@@ -1019,6 +1019,38 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1517671498620352141, guid: c81db97f20a094df1ba86af97044b6af, type: 3}
+      propertyPath: BossMusic
+      value: 
+      objectReference: {fileID: 8300000, guid: e4eae4327cec044318154bee0573bda2, type: 3}
+    - target: {fileID: 1517671498620352141, guid: c81db97f20a094df1ba86af97044b6af, type: 3}
+      propertyPath: footstepSounds.Array.size
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1517671498620352141, guid: c81db97f20a094df1ba86af97044b6af, type: 3}
+      propertyPath: footstepSounds.Array.data[0]
+      value: 
+      objectReference: {fileID: 8300000, guid: d9c5e91cac7124706b49c8fe8970fcd3, type: 3}
+    - target: {fileID: 1517671498620352141, guid: c81db97f20a094df1ba86af97044b6af, type: 3}
+      propertyPath: footstepSounds.Array.data[1]
+      value: 
+      objectReference: {fileID: 8300000, guid: 5a05da6c8653842c8b095aa46f372976, type: 3}
+    - target: {fileID: 1517671498620352141, guid: c81db97f20a094df1ba86af97044b6af, type: 3}
+      propertyPath: footstepSounds.Array.data[2]
+      value: 
+      objectReference: {fileID: 8300000, guid: 440c08445e77e4bed84f07244d3a9038, type: 3}
+    - target: {fileID: 1517671498620352141, guid: c81db97f20a094df1ba86af97044b6af, type: 3}
+      propertyPath: footstepSounds.Array.data[3]
+      value: 
+      objectReference: {fileID: 8300000, guid: 9e61cff632d8e4298ae021a8c25ac1e4, type: 3}
+    - target: {fileID: 1517671498620352141, guid: c81db97f20a094df1ba86af97044b6af, type: 3}
+      propertyPath: footstepSounds.Array.data[4]
+      value: 
+      objectReference: {fileID: 8300000, guid: dab67e0fe4fe64b2fa7ce927da1bf0a4, type: 3}
+    - target: {fileID: 1517671498620352141, guid: c81db97f20a094df1ba86af97044b6af, type: 3}
+      propertyPath: footstepSounds.Array.data[5]
+      value: 
+      objectReference: {fileID: 8300000, guid: 9be708fa7af3b48a09b5e50eb374f137, type: 3}
     - target: {fileID: 4222172468616931759, guid: c81db97f20a094df1ba86af97044b6af, type: 3}
       propertyPath: m_Name
       value: AudioManager
@@ -18267,11 +18299,14 @@ MonoBehaviour:
   - Now, if you'll excuse me.
   - I just remembered that someone entered during the middle of my class.
   - I have to go yell at this stupid stupid student.
-  - (You can't help but feel bad, even if things have returned to normal)
-  - Wait...
-  - What's that noise?
-  - Do you hear it?
-  - It is coming from the dining hall?
+  - Wait, do you hear that eerie noise coming from the dining hall?
+  - There it is again?
+  - Hmm, better go check it out
+  - '*inhales*'
+  - NEj nej nej!!!! come back here! how many times do i have to tell you
+  - you do not interrupt the middle of my class!!!
+  - that was just a practice round.
+  - yup, still got it.
   TriggersBossBattle: 0
 --- !u!212 &558081841
 SpriteRenderer:
@@ -51230,7 +51265,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 3b547e33f10041f45b081dcc06e80311, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 142f26df6d9fa4f7fa3a375d055f8beb, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -51325,7 +51360,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 2, y: 2}
+    oldSize: {x: 4, y: 3}
     newSize: {x: 2, y: 2}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -51370,7 +51405,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 2, y: 2}
+    oldSize: {x: 4, y: 3}
     newSize: {x: 2, y: 2}
     adaptiveTilingThreshold: 0.5
     drawMode: 0

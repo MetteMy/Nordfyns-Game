@@ -734,21 +734,16 @@ MonoBehaviour:
   dialogueManager: {fileID: 1922162401}
   canTalk: 0
   sentences:
-  - The school used to be lively, fun, and welcoming.
-  - But now, something is wrong, and the atmosphere feels different.
-  - The steudents are staying in their rooms and i havent seen a single teacher today.
-  - I miss the usual ways of the school.
-  - What is going on? I maktes me really sad...
-  - This school is something special to me.
-  - It is such a wonderful place, and I DON't want it to be like this.
-  - To be honest... i also feel gloomy.
-  - but I can't shake this weird depressing feeling.
-  - '*takes something out of her pocket*'
-  - I want the school to be a happy place again. Do you want to help me?
-  - Thank you.
-  - You see, this trinket is something special, and I will show you why.
-  - Please hold out your hand, and touch the trinket.
-  - Let's go! Prepare yourself!
+  - Noffy!
+  - I'm sorry, I had to make sure you were up for the task
+  - But WOW, I feel much better! I am suddenly filled with a sense of...
+  - Hope!
+  - I think there is hope for Nordfyns again.
+  - I believe you have the power to change the school.
+  - First, I think you should try seeing how the teachers are doing.
+  - 'I''ve been sensing this depressing feeling whenever I go to the swan... '
+  - I wonder what it is. Maybe you could go check it out.
+  - Please. Help the others. Let's get the school back to normal!
   TriggersBossBattle: 0
 --- !u!212 &221018455
 SpriteRenderer:
@@ -973,6 +968,34 @@ PrefabInstance:
       propertyPath: backgroundMusicClip
       value: 
       objectReference: {fileID: 8300000, guid: 2f6da7fcfcaea71408e20aed923dbbe0, type: 3}
+    - target: {fileID: 1517671498620352141, guid: c81db97f20a094df1ba86af97044b6af, type: 3}
+      propertyPath: footstepSounds.Array.size
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 1517671498620352141, guid: c81db97f20a094df1ba86af97044b6af, type: 3}
+      propertyPath: footstepSounds.Array.data[0]
+      value: 
+      objectReference: {fileID: 8300000, guid: d9c5e91cac7124706b49c8fe8970fcd3, type: 3}
+    - target: {fileID: 1517671498620352141, guid: c81db97f20a094df1ba86af97044b6af, type: 3}
+      propertyPath: footstepSounds.Array.data[1]
+      value: 
+      objectReference: {fileID: 8300000, guid: 5a05da6c8653842c8b095aa46f372976, type: 3}
+    - target: {fileID: 1517671498620352141, guid: c81db97f20a094df1ba86af97044b6af, type: 3}
+      propertyPath: footstepSounds.Array.data[2]
+      value: 
+      objectReference: {fileID: 8300000, guid: 440c08445e77e4bed84f07244d3a9038, type: 3}
+    - target: {fileID: 1517671498620352141, guid: c81db97f20a094df1ba86af97044b6af, type: 3}
+      propertyPath: footstepSounds.Array.data[3]
+      value: 
+      objectReference: {fileID: 8300000, guid: 9e61cff632d8e4298ae021a8c25ac1e4, type: 3}
+    - target: {fileID: 1517671498620352141, guid: c81db97f20a094df1ba86af97044b6af, type: 3}
+      propertyPath: footstepSounds.Array.data[4]
+      value: 
+      objectReference: {fileID: 8300000, guid: dab67e0fe4fe64b2fa7ce927da1bf0a4, type: 3}
+    - target: {fileID: 1517671498620352141, guid: c81db97f20a094df1ba86af97044b6af, type: 3}
+      propertyPath: footstepSounds.Array.data[5]
+      value: 
+      objectReference: {fileID: 8300000, guid: 9be708fa7af3b48a09b5e50eb374f137, type: 3}
     - target: {fileID: 4222172468616931759, guid: c81db97f20a094df1ba86af97044b6af, type: 3}
       propertyPath: m_Name
       value: AudioManager
@@ -36807,20 +36830,30 @@ MonoBehaviour:
   dialogueManager: {fileID: 1922162401}
   canTalk: 0
   sentences:
-  - The school used to be lively, fun, and welcoming.
+  - Hello!
+  - My name is Dory, welcome to Nordfyns!
+  - Whats your name?
+  - Noffy? What a lovely name!
+  - Hmm?
+  - Where are all the students?
+  - Well, I don't know actually.
+  - The school used to be so lively, fun, and welcoming.
   - But now, something is wrong, and the atmosphere feels different.
-  - The students are staying in their rooms and i havent seen a single teacher today.
-  - I miss the usual ways of the school.
-  - What is going on? I makes me really sad...
+  - The students are staying in their rooms, and I haven't even seen a single teacher
+    today.
+  - I miss the usual ways of the school... What is going on?
+  - It makes me really sad.
   - This school is something special to me.
-  - It is such a wonderful place, and I DON't want it to be like this.
-  - To be honest... i also feel gloomy.
-  - but I can't shake this weird depressing feeling.
-  - '*takes something out of her pocket*'
-  - I want the school to be a happy place again. Do you want to help me?
-  - Thank you.
-  - You see, this trinket is something special, and I will show you why.
-  - Please hold out your hand, and touch the trinket.
+  - It's such a wonderful place, and I DON'T want it to be like this.
+  - And to be honest...
+  - I also feel gloomy...
+  - ...and angry... for some reason.
+  - I don't know why, but I can't shake this weird feeling.
+  - I want the school to be a happy place again.
+  - Do you want to help me?
+  - ...
+  - Thank you, Noffy!
+  - I am sorry for this...
   - Let's go! Prepare yourself!
   TriggersBossBattle: 1
 --- !u!212 &612898731
@@ -38457,11 +38490,23 @@ PrefabInstance:
     - target: {fileID: 2073570762551490843, guid: b4e01b94ee164486c8947943f9d0a619, type: 3}
       propertyPath: prefabs.Array.data[1]
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 844221507}
     - target: {fileID: 2073570762551490843, guid: b4e01b94ee164486c8947943f9d0a619, type: 3}
       propertyPath: prefabs.Array.data[2]
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 844221507}
+    - target: {fileID: 2073570762551490843, guid: b4e01b94ee164486c8947943f9d0a619, type: 3}
+      propertyPath: prefabs.Array.data[3]
+      value: 
+      objectReference: {fileID: 844221507}
+    - target: {fileID: 2073570762551490843, guid: b4e01b94ee164486c8947943f9d0a619, type: 3}
+      propertyPath: prefabs.Array.data[4]
+      value: 
+      objectReference: {fileID: 844221507}
+    - target: {fileID: 2073570762551490843, guid: b4e01b94ee164486c8947943f9d0a619, type: 3}
+      propertyPath: prefabs.Array.data[5]
+      value: 
+      objectReference: {fileID: 844221507}
     - target: {fileID: 2073570762551490843, guid: b4e01b94ee164486c8947943f9d0a619, type: 3}
       propertyPath: prefabs.Array.data[6]
       value: 
@@ -66125,8 +66170,8 @@ MonoBehaviour:
   dialogueManager: {fileID: 1922162401}
   canTalk: 0
   sentences:
-  - hej
-  - udhfiuwqwdoi
+  - "&/%(\u20AC%"
+  - "/&()\u20AC\"#"
   TriggersBossBattle: 1
 --- !u!212 &1007937681
 SpriteRenderer:
@@ -68037,7 +68082,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 5495965720376452705, guid: 3470cda612a46f1448babef9efa8bb79, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1670131219}
   m_SourcePrefab: {fileID: 100100000, guid: 3470cda612a46f1448babef9efa8bb79, type: 3}
 --- !u!1001 &1499875348
 PrefabInstance:
@@ -68424,6 +68472,19 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 5495965720376452705, guid: 3470cda612a46f1448babef9efa8bb79, type: 3}
   m_PrefabInstance: {fileID: 1493008039}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1670131219
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1670131218}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 100f5232fbdbb4e80bff8fb41cb3be52, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  newSceneName: EndCutScene
 --- !u!1001 &1678276838
 PrefabInstance:
   m_ObjectHideFlags: 0
