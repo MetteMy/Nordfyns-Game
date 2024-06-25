@@ -417,7 +417,7 @@ MonoBehaviour:
   - {fileID: 899882722}
   - {fileID: 1462106784}
   enemyPrefab: {fileID: 5629456180492913846}
-  hasMultiplied: 1
+  hasMultiplied: 0
 --- !u!1001 &115016419
 PrefabInstance:
   m_ObjectHideFlags: 0
