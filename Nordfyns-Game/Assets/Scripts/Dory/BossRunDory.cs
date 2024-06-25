@@ -83,26 +83,27 @@ public class BossRunDory : StateMachineBehaviour
 
     private void CheckHealthThreshold(Animator animator)
     {
-        switch (enemyHealth.health)
-        {
+        
             // case 23:
-                
+
             //     animator.SetTrigger("TransitionToState1");
             //     break;
-            case 20:
-                
-                animator.SetTrigger("TransitionToState2");
-                break;
+            //case 20:
+        if (enemyHealth.health <= 20) {
+            animator.SetTrigger("TransitionToState2");
+        }
 
-            case 10:
-           
-                animator.SetTrigger("TransitionToState3");
-                break;
-            case 0:
-
-                animator.SetTrigger("Dead");
-                break;
-
+        //case 10:
+        if (enemyHealth.health <= 10)
+        {
+            animator.SetTrigger("TransitionToState3");
+            //break;
+            //case 0:
+        }
+        if (enemyHealth.health <= 0)
+        {
+            animator.SetTrigger("Dead");
+                //break;
 
         }
 
