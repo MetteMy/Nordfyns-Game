@@ -28,7 +28,6 @@ public class EndBossBattle : MonoBehaviour
 
     private bool battleEnded = false; // Flag to check if battle has ended
 
-    private SceneTransitionAfterFade sceneTransitionAfterFade;
 
     void Start()
     {
@@ -37,12 +36,7 @@ public class EndBossBattle : MonoBehaviour
             uiImage = GetComponent<Image>();
         }
 
-        sceneTransitionAfterFade = GetComponent<SceneTransitionAfterFade>();
-
-        if (sceneTransitionAfterFade == null)
-        {
-            Debug.LogError("SceneTransitionAfterFade component not found on the same GameObject!");
-        }
+     
     }
 
     void Update()
@@ -98,7 +92,7 @@ public class EndBossBattle : MonoBehaviour
         finishSquare.SetActive(false);
         AudioManager.Instance.PlayBackgroundMusic();
 
-        sceneTransitionAfterFade.StartSceneTransition();
+      
 
         player.transform.position = playerBattleEndPos.position;
         
