@@ -38,12 +38,7 @@ public class GameManager : MonoBehaviour
         bossesDefeated++;
 
         // Increase player stats
-        if (playerHealth < 100){
-        
-        playerHealth = 100; // Increase health
-        playerSpeed += 1f;   // Increase speed
-        playerDamage += 5f;  // Increase damage
-        }
+       
         // Activate corresponding NPC prefab if exists
         if (bossesDefeated - 1 < npcPrefabs.Length && npcPrefabs[bossesDefeated - 1] != null)
         {
